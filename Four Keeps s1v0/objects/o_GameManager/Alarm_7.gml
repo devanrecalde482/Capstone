@@ -1,3 +1,0 @@
-/// @description Execution/Death scene
-
-
