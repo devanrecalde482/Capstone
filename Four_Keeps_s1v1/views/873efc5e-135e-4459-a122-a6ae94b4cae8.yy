@@ -10,7 +10,7 @@
         "c83a4553-ad7c-491a-9ec8-ad6ddf2e945e"
     ],
     "filterType": "GMSprite",
-    "folderName": "Blue Player",
+    "folderName": "Player",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
