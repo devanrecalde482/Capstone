@@ -3,7 +3,13 @@
 var xx = x;
 var yy = y;
 
+
 if(can_move){
+	
+	if(player != noone){
+		pColor = player.color;	
+	}
+	
 	if( (player != noone) && (player.can_move) ){
 	
 		//up
@@ -37,21 +43,25 @@ if(can_move){
 			y = yy;
 		}
 	
-	
+		move_snap(32, 32);
+		
 		if(place_empty(x,y)){
 			valid_spot = true;
-			image_alpha = 1;
+			pColor = player.color;
+			//image_alpha = 1;
 		}
 		else{
 			valid_spot = false;
-			image_alpha = 0.5;
+			pColor = c_white;
+			
+			//image_alpha = 0.5;
 		}
 
 
 		//place
 		if(keyboard_check_pressed(player.keybinds[5])){
 			if(valid_spot){
-								
+				move_snap(32,32);			
 				Add_To_Grid(self, o_TetrisPiece, player.num);
 
 				FloodAll();

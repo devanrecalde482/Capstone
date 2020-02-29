@@ -32,51 +32,72 @@ if(can_move){
 			player.startY = y;
 			player.cursor = noone;
 			
+			
 			var curPiece = instance_create_layer(x, y, "pieces", o_Single);
 			curPiece.player = player;
+			var newPiece;
+			
+			//move_snap(32, 32);
 		
 			//create walls around the castle
 			with(curPiece){
+				//BUG: the move snap here makes blue inaccurate
+				
+				
 				move_snap(32, 32);
-				x -= 32*5;
-				y -= 32*5;
+				
+				x -= (32*5);
+				y -= (32*5);
+				
+				
+				
 			
-				instance_copy(true);
-			
-				global.map_grid[floor(y/32), floor(x/32)] = 10*player.num +2;
+				newPiece = instance_create_layer(x, y, "pieces", o_Single);
+				newPiece.player = player;
+				
+				//BUG: these are making the floors the wrong player color
+				global.map_grid[floor(y/32), floor(x/32)] = 10 * player.num + 2;
 
 				for(var i = 0; i < 7; i++){
 					x += 32;
-					instance_copy(true);
+					//move_snap(32, 32);
+					newPiece = instance_create_layer(x, y, "pieces", o_Single);
+					newPiece.player = player;
 					global.map_grid[floor(y/32), floor(x/32)] = 10*player.num +2;
 				
 				}
 			
 				for(var j = 0; j < 7; j++){
 					y += 32;
-					instance_copy(true);
+					//move_snap(32, 32);
+					newPiece = instance_create_layer(x, y, "pieces", o_Single);
+					newPiece.player = player;
 					global.map_grid[floor(y/32), floor(x/32)] = 10*player.num +2;
 				
 				}
 				for(var i = 0; i < 7; i++){
 					x -= 32;
-					instance_copy(true);
+					//move_snap(32, 32);
+					newPiece = instance_create_layer(x, y, "pieces", o_Single);
+					newPiece.player = player;
 					global.map_grid[floor(y/32), floor(x/32)] = 10*player.num +2;
 				
 				}
 			
 				for(var j = 0; j < 6; j++){
 					y -= 32;
-					instance_copy(true);
-					global.map_grid[floor(y/32), floor(x/32)] = 10*player.num +2;
+					//move_snap(32, 32);
+					newPiece = instance_create_layer(x, y, "pieces", o_Single);
+					newPiece.player = player;
+					global.map_grid[floor(y/32), floor(x/32)] = ((10*player.num) + 2);
 				}
-
 
 				instance_destroy(curPiece);
 			}
 			
 			FloodAll();
 			CheckCastles();
+			
 
 			instance_destroy( self );
 		}
