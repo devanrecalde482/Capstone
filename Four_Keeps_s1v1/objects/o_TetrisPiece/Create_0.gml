@@ -5,8 +5,14 @@ y += adjustY;
 
 image_speed = 2;
 
-sprite_collision_mask(self.sprite_index, true, 1, 0, 0, 0, 0, 0, 0);
 
+//Note: changed from my.sprite_index; should be the same
+sprite_collision_mask(sprite_index, true, 1, 0, 0, 0, 0, 0, 0);
+
+//HACK
+if(player != noone){
+	pColor = player.color;	
+}
 
 
 

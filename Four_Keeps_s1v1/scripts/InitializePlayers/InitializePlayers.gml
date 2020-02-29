@@ -6,7 +6,7 @@ var int p = 0;
 if(p < num_players){
 
 	//player 1
-	{
+	
 	player1 = instance_create_layer(x, y, "UI", o_Player);
 	player1.num = 1;
 	player1.color = c_blue;
@@ -29,7 +29,7 @@ if(p < num_players){
 if(p < num_players){
 	
 	//Player 2
-	{
+	
 	player2 = instance_create_layer(x, y, "UI", o_Player);
 	player2.num = 2;
 	player2.color = c_red;

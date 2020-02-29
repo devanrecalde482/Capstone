@@ -4,7 +4,7 @@ var xx = x;
 var yy = y;
 
 if(can_move){
-	if(player.can_move){
+	if( (player != noone) && (player.can_move) ){
 	
 		//up
 		if(keyboard_check_pressed(player.keybinds[0])){
@@ -29,6 +29,7 @@ if(can_move){
 		//rotate
 		else if(keyboard_check_pressed(player.keybinds[4])){
 			image_angle += 90;
+			move_snap(32,32);
 		}
 
 		if( !Valid_move( self ) ){
@@ -50,26 +51,18 @@ if(can_move){
 		//place
 		if(keyboard_check_pressed(player.keybinds[5])){
 			if(valid_spot){
-				
-				var num;
-				if(player.color == c_blue){
-					num = 1;
-				}
-				else if(player.color == c_red){
-					num = 2;
-				}
-				
-				Add_To_Grid(self, o_TetrisPiece, num);
+								
+				Add_To_Grid(self, o_TetrisPiece, player.num);
 
 				FloodAll();
 				CheckCastles();
 
-				var range = ds_list_size(player.tPieces)-1;
+				var range = ds_list_size(global.tPieces)-1;
 				if(global.curRound < 2){
 					range = 2;
 				}
 		
-				var newPiece = instance_create_layer(x, y, "pieces", ds_list_find_value(player.tPieces, irandom_range(0,range)));
+				var newPiece = instance_create_layer(x, y, "pieces", ds_list_find_value(global.tPieces, irandom_range(0,range)));
 				player.piece = newPiece;
 				newPiece.player = player;
 				newPiece.can_move = true;

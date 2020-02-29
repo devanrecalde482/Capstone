@@ -1,4 +1,4 @@
-/// @description Game Over
+///@description Game Over
 
 show_message("Checking castle saftey");
 
