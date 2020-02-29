@@ -48,6 +48,7 @@ if(can_move){
 		if(place_empty(x,y)){
 			valid_spot = true;
 			pColor = player.color;
+			//
 			//image_alpha = 1;
 		}
 		else{
