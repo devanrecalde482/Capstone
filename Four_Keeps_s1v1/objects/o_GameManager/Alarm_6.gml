@@ -9,6 +9,7 @@ switch(global.phase){
 	case 0: {
 		with(o_Player){
 			
+			//BUG: Is this where the keypress sometimes fials?
 			if(cursor!= noone){
 				canMove = true;
 				keyboard_key_press(keybinds[5]);

@@ -7,6 +7,8 @@ global.tile_size = 32;
 global.rounds = 5;
 global.curRound = 1;
 global.numberOfPlayers = 2;
+global.castles = 2;
+global.totalWeapons = 3;
 
 global.phase = 0;
 phaseTime = 0; //rename to phaseTime?
@@ -15,8 +17,10 @@ timers = [10, 2, 5, 15, 0, 0, 0, 0];
 gameTime = 0; //total time game is running. so good for if 10m limit
 
 game_set_speed(60, gamespeed_fps);
-set_piece_list();
 global.gSpeed = game_get_speed(gamespeed_fps);
+
+
+set_piece_list();
 
 global.map_width = 40;
 global.map_height = 25;

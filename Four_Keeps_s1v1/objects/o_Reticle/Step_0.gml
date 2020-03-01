@@ -6,14 +6,6 @@ var yy = y;
 if(can_move){ 
 	if(player.can_move){
 	
-		//faster
-		if(keyboard_check(player.keybinds[4])){
-			move_speed = 8;
-		}
-		else{
-			move_speed = 4;	
-		}
-	
 		//up
 		if(keyboard_check(player.keybinds[0])){
 			y -= move_speed;
@@ -38,6 +30,18 @@ if(can_move){
 			x = xx;
 			y = yy;
 		}
+
+		//faster
+		if(keyboard_check(player.keybinds[4])){
+			move_speed = 8;
+		}
+		else{
+			move_speed = 4;	
+		}
+
+
+
+
 
 		//fire
 		if(keyboard_check_pressed(player.keybinds[5])){

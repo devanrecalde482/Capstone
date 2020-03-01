@@ -5,7 +5,7 @@ show_message("Build your walls and fill any gaps");
 
 with(o_Player){
 
-	move_snap(32, 32);
+	//move_snap(32, 32);
 	var range = ds_list_size(global.tPieces)-1;
 	if(global.curRound <2){
 		range = 2;

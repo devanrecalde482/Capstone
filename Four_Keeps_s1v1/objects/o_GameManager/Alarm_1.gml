@@ -9,7 +9,7 @@ with(o_Player){
 	cursor.can_move = true;
 	saved_cannons += (num_castles_enclosed + 1);
 	can_place_cannon = true;
-	move_snap(32, 32);
+	//move_snap(32, 32);
 }
 
 SetTimer();
