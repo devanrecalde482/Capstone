@@ -1,16 +1,21 @@
 ///@description Movement
 
-var xx = x;
-var yy = y;
 
 
 if(can_move){
+	
+	if(!place_snapped(global.tile_size,global.tile_size)){
+		move_snap(global.tile_size, global.tile_size);
+	}
 	
 	if(player != noone){
 		pColor = player.color;	
 	}
 	
 	if( (player != noone) && (player.can_move) ){
+		
+		var xx = x;
+		var yy = y;
 	
 		//up
 		if(keyboard_check_pressed(player.keybinds[0])){
@@ -34,26 +39,22 @@ if(can_move){
 
 		//rotate
 		else if(keyboard_check_pressed(player.keybinds[4])){
-			image_angle += 90;
-			//move_snap(32,32);
+			image_index++;
+			
 		}
 
 		if( !Valid_move( self ) ){
 			x = xx;
 			y = yy;
 		}
-	
-		//move_snap(32, 32);
 		
 		if(place_empty(x,y)){
 			valid_spot = true;
-			//pColor = player.color;
-			//
+			
 			image_alpha = 1;
 		}
 		else{
 			valid_spot = false;
-			//pColor = c_white;
 			
 			image_alpha = 0.5;
 		}
@@ -61,9 +62,8 @@ if(can_move){
 
 		//place
 		if(keyboard_check_pressed(player.keybinds[5])){
-			if(valid_spot){
-				//move_snap(32,32);			
-				Add_To_Grid(self, o_TetrisPiece, player.num);
+			if(valid_spot){	
+				Add_To_Grid(self, o_TetrisPiece);
 
 				FloodAll();
 				CheckCastles();

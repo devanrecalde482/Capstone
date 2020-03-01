@@ -1,9 +1,9 @@
-///@function Add_To_Grid(object, objectType, playerNum)
+///@function Add_To_Grid(object, objectType)
 
 var curObject = argument0;
 var objectType = argument1;
-var playerNum = argument2;
 
+//TODO: Split tetris piece into singles
 var startX = curObject.bbox_left;
 var startY = curObject.bbox_top;
 
@@ -21,7 +21,7 @@ for(var yy = startY; yy < endY; yy += 32){
 			//else if(objectType == o_Cannon){
 			//	spot = 5;
 			//}
-			global.map_grid[floor(yy/32), floor(xx/32)] = 10*playerNum + spot;
+			global.map_grid[floor(yy/32), floor(xx/32)] = ((10*curObject.player.num) + spot);
 		}
 		
 	}

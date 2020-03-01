@@ -1,7 +1,5 @@
 ///@decription projectile
 
-//BUG: Locatoin not always destroying the wall there
-
 if(fired){
 	move_towards_point(targetX, targetY, velocity);
 	fired = false;

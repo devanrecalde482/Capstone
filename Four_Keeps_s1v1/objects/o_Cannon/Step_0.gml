@@ -1,11 +1,13 @@
 ///@description Movement
 
 
-var xx = x;
-var yy = y;
 
 if(can_move){
 	if(player != noone && player.can_move){
+		
+		var xx = x;
+		var yy = y;
+	
 		//up
 		if(keyboard_check_pressed(player.keybinds[0])){
 			y -= global.tile_size;

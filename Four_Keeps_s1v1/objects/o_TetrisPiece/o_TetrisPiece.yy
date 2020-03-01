@@ -53,34 +53,6 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "5739c48e-ee01-4e34-8bf3-3c31f01bd7a0",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "16",
-            "varName": "adjustX",
-            "varType": 1
-        },
-        {
-            "id": "f0cb568d-aff1-4123-97cf-dab65cd55cab",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "16",
-            "varName": "adjustY",
-            "varType": 1
-        },
-        {
             "id": "e731ec8e-5261-495a-a771-f44568baa708",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -121,20 +93,6 @@
             "value": "0",
             "varName": "can_move",
             "varType": 3
-        },
-        {
-            "id": "58aa7ea3-9b20-4624-84ed-05116c005f93",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "curRotation",
-            "varType": 1
         },
         {
             "id": "fcce9b17-0058-4a5a-8fd7-f8e8109b6ded",
