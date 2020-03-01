@@ -1,11 +1,14 @@
 
 //HACK
 
-
-move_snap(32, 32);
-x += adjustX;
-y += adjustY;
-move_snap(32, 32);
+if(!place_snapped(global.tile_size,global.tile_size)){
+	move_snap(global.tile_size, global.tile_size);
+}
+//x += adjustX;
+//y += adjustY;
+//if(!place_snapped(global.tile_size,global.tile_size)){
+//	move_snap(global.tile_size, global.tile_size);
+//}
 
 image_speed = 2;
 

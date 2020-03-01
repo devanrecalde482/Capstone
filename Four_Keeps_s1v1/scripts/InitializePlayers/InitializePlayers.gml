@@ -12,6 +12,7 @@ if(p < num_players){
 	player1.color = c_blue;
 	player1.keybinds = [vk_up, vk_down, vk_left, vk_right, vk_rshift, vk_enter];
 
+	//BUG: Bottom castle x/y may be too low?
 	player1.list_castles = [
 		P1_Castle1,
 		P1_Castle2,

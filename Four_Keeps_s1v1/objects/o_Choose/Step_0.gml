@@ -22,7 +22,7 @@ if(can_move){
 			
 		x = player.list_castles[player.starting_castle].x;
 		y = player.list_castles[player.starting_castle].y;
-		move_snap(32, 32);
+		//move_snap(32, 32);
 				
 		//choose starting castle
 		if(keyboard_check_pressed(player.keybinds[5])){
@@ -41,29 +41,28 @@ if(can_move){
 		
 			//create walls around the castle
 			with(curPiece){
-				//BUG: the move snap here makes blue inaccurate
-				
-				
-				move_snap(32, 32);
+				//BUG: the move snap here makes the lower castles innacurate
+                                                                                                                           
+				//move_snap(32, 32);
 				
 				x -= (32*5);
-				y -= (32*5);
+				y -= (32*4);
+				move_snap(32, 32);
 				
-				
-				
-			
+	
 				newPiece = instance_create_layer(x, y, "pieces", o_Single);
 				newPiece.player = player;
+				//move_snap(32, 32);
 				
 				//BUG: these are making the floors the wrong player color
-				global.map_grid[floor(y/32), floor(x/32)] = 10 * player.num + 2;
+				global.map_grid[floor(y/32), floor(x/32)] = ((10*player.num) + 2);
 
 				for(var i = 0; i < 7; i++){
 					x += 32;
 					//move_snap(32, 32);
 					newPiece = instance_create_layer(x, y, "pieces", o_Single);
 					newPiece.player = player;
-					global.map_grid[floor(y/32), floor(x/32)] = 10*player.num +2;
+					global.map_grid[floor(y/32), floor(x/32)] = ((10*player.num) +2);
 				
 				}
 			
@@ -72,7 +71,7 @@ if(can_move){
 					//move_snap(32, 32);
 					newPiece = instance_create_layer(x, y, "pieces", o_Single);
 					newPiece.player = player;
-					global.map_grid[floor(y/32), floor(x/32)] = 10*player.num +2;
+					global.map_grid[floor(y/32), floor(x/32)] = ((10*player.num) +2);
 				
 				}
 				for(var i = 0; i < 7; i++){
@@ -80,7 +79,7 @@ if(can_move){
 					//move_snap(32, 32);
 					newPiece = instance_create_layer(x, y, "pieces", o_Single);
 					newPiece.player = player;
-					global.map_grid[floor(y/32), floor(x/32)] = 10*player.num +2;
+					global.map_grid[floor(y/32), floor(x/32)] = ((10*player.num) +2);
 				
 				}
 			

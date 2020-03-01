@@ -13,6 +13,7 @@ if(timerOn){
 		if(phaseTime <= 0){
 			with(o_Player){
 				if(global.phase == 0){
+					//BUG: doesn't seem to always work
 					keyboard_key_press(keybinds[5]);
 				}
 				can_move = false;

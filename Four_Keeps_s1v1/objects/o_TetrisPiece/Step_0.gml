@@ -35,7 +35,7 @@ if(can_move){
 		//rotate
 		else if(keyboard_check_pressed(player.keybinds[4])){
 			image_angle += 90;
-			move_snap(32,32);
+			//move_snap(32,32);
 		}
 
 		if( !Valid_move( self ) ){
@@ -43,26 +43,26 @@ if(can_move){
 			y = yy;
 		}
 	
-		move_snap(32, 32);
+		//move_snap(32, 32);
 		
 		if(place_empty(x,y)){
 			valid_spot = true;
-			pColor = player.color;
+			//pColor = player.color;
 			//
-			//image_alpha = 1;
+			image_alpha = 1;
 		}
 		else{
 			valid_spot = false;
-			pColor = c_white;
+			//pColor = c_white;
 			
-			//image_alpha = 0.5;
+			image_alpha = 0.5;
 		}
 
 
 		//place
 		if(keyboard_check_pressed(player.keybinds[5])){
 			if(valid_spot){
-				move_snap(32,32);			
+				//move_snap(32,32);			
 				Add_To_Grid(self, o_TetrisPiece, player.num);
 
 				FloodAll();
