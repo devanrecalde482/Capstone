@@ -57,7 +57,7 @@ if(p < num_players){
 
 
 with(o_Player){
-	for(var i = 0; i < 4; i++){
+	for(var i = 0; i < 2; i++){
 		list_castles[i].player = self;	
 	}
 }

@@ -7,7 +7,7 @@ if(can_move){
 		//next
 		if(keyboard_check_pressed(player.keybinds[0]) || keyboard_check_pressed(player.keybinds[2])){
 			player.starting_castle++;
-			if(player.starting_castle > 3){
+			if(player.starting_castle > 1){
 				player.starting_castle = 0;
 			}
 		}
@@ -16,7 +16,7 @@ if(can_move){
 		else if(keyboard_check_pressed(player.keybinds[1]) || keyboard_check_pressed(player.keybinds[3])){
 			player.starting_castle--;
 			if(player.starting_castle < 0){
-				player.starting_castle = 3;
+				player.starting_castle = 1;
 			}
 		}
 			
