@@ -5,31 +5,6 @@ var yy = y;
 
 if(player.can_move){
 
-	//rotate through other turrets if avaliable
-	if(keyboard_check(player.keybinds[6]))
-	{
-		do{
-			player.current_turret--;
-		if(player.current_turret < 0)
-		{
-			player.current_turret = global.totalWeapons-1;
-		}
-		var curCannon = player.list_cannons[player.current_turret,0];
-		}until((curCannon != noone) && (curCannon.enabled))
-
-	}
-	
-	if(keyboard_check(player.keybinds[7]))
-	{
-		do{
-			player.current_turret++;
-		if(player.current_turret > global.totalWeapons-1)
-		{
-			player.current_turret = 0;
-		}
-		var curCannon = player.list_cannons[player.current_turret,0];
-	}until((curCannon != noone) && (curCannon.enabled))
-		}
 	//faster
 	if(keyboard_check(player.keybinds[4])){
 		move_speed = 8;
@@ -62,7 +37,50 @@ if(player.can_move){
 		x = xx;
 		y = yy;
 	}
-	sprite_index = player.cursors[player.current_turret];
+	
+	//rotate through other turrets if avaliable
+	if(keyboard_check(player.keybinds[6]))
+	{
+		do{
+			player.current_turret--;
+			if(player.current_turret < 0)
+				{
+					player.current_turret = global.totalWeapons-1;
+				}
+			var curCannon = player.list_cannons[player.current_turret,0];
+		}until((curCannon != noone) && (curCannon.enabled))
+
+	}
+	
+	if(keyboard_check(player.keybinds[7]))
+	{
+		do{
+			player.current_turret++;
+			if(player.current_turret > global.totalWeapons-1)
+				{
+					player.current_turret = 0;
+				}
+			var curCannon = player.list_cannons[player.current_turret,0];
+		}until((curCannon != noone) && (curCannon.enabled))
+	}
+	
+	var sName = "s_reticle";
+	switch( player.current_turret ){
+		case 0:
+			sName = "s_Reticle"; break;
+		case 1:
+			sName = "s_target_volcano"; break;
+		case 2:
+			sName = "s_target_laser"; break;
+		case 3:
+			sName = "s_target_mangonel"; break;
+		
+		default:
+			sName = "s_Reticle"; break;
+	}
+		
+	image_index = asset_get_index(sName);
+		
 	//fire
 	if(keyboard_check_pressed(player.keybinds[5])){
 		var fired = false;
