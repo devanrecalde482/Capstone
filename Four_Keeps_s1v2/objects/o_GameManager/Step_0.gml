@@ -23,6 +23,8 @@ if(timerOn){
 				phaseTime = 0;
 			}
 		}
+
+		//TODO: Disable player movement and cannon shooting when time is up
 	}
 	else if(instance_number(o_Ball) > 0){
 		//wait

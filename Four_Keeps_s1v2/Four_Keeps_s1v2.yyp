@@ -135,14 +135,6 @@
             }
         },
         {
-            "Key": "1d0442cf-27af-44cf-a935-9205f1bf5088",
-            "Value": {
-                "id": "c235b4f8-50dc-40c0-8ab7-52b21da1835a",
-                "resourcePath": "tilesets\\t_Grid\\t_Grid.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "1dcd6b67-fc87-4c41-be57-4266fb9ecf1c",
             "Value": {
                 "id": "bb6e3cb5-483e-4a86-97c2-37f14a6ea58a",
@@ -260,14 +252,6 @@
                 "id": "f4e8c594-350b-4794-89ea-f14b09515292",
                 "resourcePath": "scripts\\Add_Piece\\Add_Piece.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "3ff79237-ae55-4a70-b8b4-90cab3e8fcd9",
-            "Value": {
-                "id": "f8f84503-21c2-4950-889e-4fce07cf6881",
-                "resourcePath": "extensions\\Easy_Pause\\Easy_Pause.yy",
-                "resourceType": "GMExtension"
             }
         },
         {
@@ -556,14 +540,6 @@
                 "id": "965bf34c-5607-458c-925c-52994395b61f",
                 "resourcePath": "sprites\\s_volcano\\s_volcano.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "86e6fec5-b1d7-44e4-bc69-75342ddec5ae",
-            "Value": {
-                "id": "124445de-566f-4174-967c-051b275aac60",
-                "resourcePath": "tilesets\\t_Rampart\\t_Rampart.yy",
-                "resourceType": "GMTileSet"
             }
         },
         {

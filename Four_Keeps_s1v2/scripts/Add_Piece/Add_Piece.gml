@@ -14,7 +14,6 @@ with(curObject){
 			var newPiece = instance_create_layer(xx, yy, "pieces", o_Single);
 		
 			if(place_meeting(x, y, newPiece)){
-				//BUG: Is this where the wrong tile colors are being added?
 				global.map_grid[floor(yy/32), floor(xx/32)] = ((10*player.num) + 2);
 				newPiece.player = player;
 				newPiece.image_alpha = 0.8;
