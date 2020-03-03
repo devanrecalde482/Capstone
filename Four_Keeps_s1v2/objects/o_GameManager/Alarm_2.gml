@@ -8,7 +8,7 @@ with(o_Player){
 	cursor.player = self;
 	can_move = true;
 	cursor.can_move = true;
-	laser = o_Player.list_cannons[2,0];
+	laser = list_cannons[2,0];
 	laser.cooldown = false;
 }
 

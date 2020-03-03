@@ -1002,7 +1002,7 @@
             "Key": "f686d813-e5ba-43fe-bda4-b646a1fe0aa7",
             "Value": {
                 "id": "d4d21061-f021-4acf-a3d4-808fe1eb838c",
-                "resourcePath": "scripts\\CheckCastles\\CheckCastles.yy",
+                "resourcePath": "scripts\\CheckEnclosed\\CheckEnclosed.yy",
                 "resourceType": "GMScript"
             }
         },

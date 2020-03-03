@@ -7,7 +7,7 @@ show_message("Checking castle saftey");
 //allow them to do phase 0 again
 
 FloodAll();
-CheckCastles();
+CheckEnclosed();
 
 
 if( (player1.hp <= 0) && (player2.hp <= 0 ) ){

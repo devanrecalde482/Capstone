@@ -47,7 +47,7 @@ with(curPiece){
 }
 			
 FloodAll();
-CheckCastles();
+CheckEnclosed();
 			
 
 instance_destroy( myCursor );

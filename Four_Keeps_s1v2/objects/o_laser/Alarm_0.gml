@@ -1,9 +1,11 @@
 
 image_xscale = size*2*velocity;
 size += velocity;
-
-var tile = tilemap_get_at_pixel(layer_tilemap_get_id(layer_get_id("map")),bbox_left,bbox_top);
-if( (tile == 44) || (tile == 264))
-	tilemap_set_at_pixel(layer_tilemap_get_id(layer_get_id("map")),11,bbox_left,bbox_top);
+		var wall = instance_position(bbox_left,bbox_top,o_TetrisPiece);
+		if(wall != noone)
+		{
+			global.map_grid[floor(bbox_top/32), floor(bbox_left/32)]--;
+			instance_destroy(wall);
+		}
 	
-	alarm[0]= velocity
+	alarm[0]= velocity*2
