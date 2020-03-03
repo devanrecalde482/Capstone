@@ -8,9 +8,11 @@ yy = (y + global.tile_size * j);
 	for(i = -1; i <= 1; i++)
 	{
 		xx = (x + global.tile_size * i);
-		var tile = tilemap_get_at_pixel(layer_tilemap_get_id(layer_get_id("map")),xx,yy);
-		
-		if( (tile == 44) || (tile == 264))
-			tilemap_set_at_pixel(layer_tilemap_get_id(layer_get_id("map")),11,xx,yy);
+			var wall = instance_position(xx, yy, o_TetrisPiece);
+		if(wall != noone)
+		{
+			global.map_grid[floor(yy/32), floor(xx/32)]--;
+			instance_destroy(wall);
+		}
 	}
 }

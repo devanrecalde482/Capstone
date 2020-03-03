@@ -2,7 +2,7 @@
 //this is to allow a pause between phases, and to disable various variables
 
 FloodAll();
-CheckCastles();
+CheckEnclosed();
 		
 //FIXME: This section has overlap, and needs cleaning up
 switch(global.phase){

@@ -75,7 +75,7 @@ if(can_move){
 				newPiece.can_move = true;
 
 				FloodAll();
-				CheckCastles();
+				CheckEnclosed();
 				
 				instance_destroy(self);
 				
