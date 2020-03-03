@@ -5,66 +5,37 @@ FloodAll();
 CheckEnclosed();
 		
 //FIXME: This section has overlap, and needs cleaning up
-switch(global.phase){
-	case 0: {
-		with(o_Player){
-			
-			if(cursor!= noone){
-				Set_Start_Castle(cursor);
-			}
-			cursor = noone;
-			can_move = false;
-		}
-	}
-	break;
-	
-	case 1: {
 
-		with(o_Player){
-			if( cursor!= noone){
-				instance_destroy( cursor );
-				cursor = noone;
-			}
-		}
-
-	}
-	break;
+with(o_Player){
 	
-	case 2: {
-
-		with(o_Player){
-			if(cursor != noone){
-				instance_destroy( cursor );
-				cursor = noone;
-			}
+	if(cursor != noone){
+		if(global.phase == 0){
+			Set_Start_Castle(cursor);
 		}
-				
+		instance_destroy(cursor);
+		cursor = noone;
 	}
-	break;
 	
-	case 3: {
-		with(o_Player){	
-			if(piece != noone){
-				instance_destroy(piece);
-				piece = noone;
-			}
-			if(num_castles_enclosed <= 0){
-				hp--;	
-			}
-			
+	if(global.phase == 3){
+		if(piece != noone){
+			instance_destroy(piece);
+			piece = noone;
 		}
+		
+		if(num_castles_enclosed <= 0){
+			hp--;	
+		}	
 	}
-	break;
 	
-	case 4: {
+	can_move = false;
+	
+	if(global.phase == 4){
 		global.phase = 0; 
 		global.curRound++;
 	}
-	break;
-	
-	default: break;
 	
 }
+
 
 //move to next phase
 global.phase++;
