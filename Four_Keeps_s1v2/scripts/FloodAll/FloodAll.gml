@@ -56,6 +56,7 @@ while(!ds_stack_empty(checklist)){
 							if(pNum != 0){
 								tValue = 2;
 							}
+							//BUG: Is it here that the wrong colors get set?
 							checked[yy+j, xx+i] = true;
 							global.map_grid[yy+j, xx+i] = ((10*pNum) + tValue);
 							break;
@@ -80,6 +81,7 @@ for(var xx = 0; xx < global.map_width; xx++){
 			curSpot = global.map_grid[yy, xx];
 			
 			var pNum = floor(curSpot / 10);
+			//BUG: Is it here that the wrong colors get set?
 			global.map_grid[yy, xx] = ((10*pNum) + 1);
 		}
 	}
@@ -107,6 +109,7 @@ for(var xx = 0; xx < global.map_width; xx++){
 				tValue = 1;
 			}
 
+			//BUG: Is it here that the wrong colors get set?
 			newTile = ((3*pNum) + tValue);
 		}
 

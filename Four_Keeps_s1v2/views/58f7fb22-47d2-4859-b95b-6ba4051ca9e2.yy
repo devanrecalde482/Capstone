@@ -10,7 +10,7 @@
         "6119b7d8-1834-4024-865e-1298f6ac8187"
     ],
     "filterType": "GMSprite",
-    "folderName": "Keep",
+    "folderName": "base",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
