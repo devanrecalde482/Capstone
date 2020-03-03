@@ -1,11 +1,13 @@
 ///@description Movement
 
 
-var xx = x;
-var yy = y;
 
 if(can_move){
 	if(player != noone && player.can_move){
+		
+		var xx = x;
+		var yy = y;
+	
 		//up
 		if(keyboard_check_pressed(player.keybinds[0])){
 			y -= global.tile_size;
@@ -35,8 +37,6 @@ if(can_move){
 			x = xx;
 			y = yy;
 		}
-	
-		
 	
 		if(place_empty(x,y)){
 			var tx = floor(x/32);
@@ -69,15 +69,7 @@ if(can_move){
 			
 				if(player.saved_cannons > 0){
 
-					var can;
-					if(player.color == c_blue){
-						can = o_BlueCannon;
-					}
-					else if(player.color == c_red){
-						can = o_RedCannon;
-					}
-
-					var newCannon = instance_create_layer(x, y, "pieces", can);
+					var newCannon = instance_create_layer(x, y, "pieces", o_Cannon);
 					var temp = player.list_cannons;
 					player.list_cannons[player.num_of_cannons] = newCannon;
 					newCannon.player = player;

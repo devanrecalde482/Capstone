@@ -3,18 +3,10 @@
 
 with(o_Player){
 	var tcast;
-	var myPlayer = 0;
 	num_castles_enclosed = 0;
 
-	for(var i = 0; i < 4; i++){
+	for(var i = 0; i < 2; i++){
 		tcast = list_castles[i];
-
-		if(color == c_blue){
-			myPlayer = 1;
-		}
-		else if(color == c_red){
-			myPlayer = 2;
-		}
 		
 		var spot = global.map_grid[floor(tcast.y/32), floor(tcast.x/32)];
 

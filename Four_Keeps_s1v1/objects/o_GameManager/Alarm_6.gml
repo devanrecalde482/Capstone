@@ -10,12 +10,10 @@ switch(global.phase){
 		with(o_Player){
 			
 			if(cursor!= noone){
-				canMove = true;
-				keyboard_key_press(keybinds[5]);
-				instance_destroy( cursor );
+				Set_Start_Castle(cursor);
 			}
 			cursor = noone;
-			canMove = false;
+			can_move = false;
 		}
 	}
 	break;

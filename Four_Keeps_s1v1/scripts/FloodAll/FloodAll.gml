@@ -38,26 +38,30 @@ while(!ds_stack_empty(checklist)){
 				else if(!checked[yy+j, xx+i]){
 					
 					newSpot = global.map_grid[yy+j, xx+i];
-					var q = floor(newSpot / 10);	
-					var r = (newSpot % 10);	
+					var pNum = floor(newSpot / 10);	
+					var tValue = (newSpot % 10);	
 					
-					switch(r){	
+					switch(tValue){	
 						case 0: //normal land
 							ds_stack_push(checklist, (xx+i) + ((yy+j)*global.map_width) );
 							break;
 						case 1: //river or interior
-							if(q != 0){
-								r = 0;
+							if(pNum != 0){
+								tValue = 0;
 							}
-							global.map_grid[yy+j, xx+i] = q*10+r;
+							global.map_grid[yy+j, xx+i] = ((10*pNum) +tValue);
 							ds_stack_push(checklist, (xx+i) + ((yy+j)*global.map_width) );
 							break;
 						case 2: //wall
+							if(pNum != 0){
+								tValue = 2;
+							}
+							//BUG: Is it here that the wrong colors get set?
 							checked[yy+j, xx+i] = true;
-							global.map_grid[yy+j, xx+i] = q*10 + 2;
+							global.map_grid[yy+j, xx+i] = ((10*pNum) + tValue);
 							break;
 						default: //cannon, castle, etc
-							global.map_grid[yy+j, xx+i] = q*10;
+							global.map_grid[yy+j, xx+i] = (10*pNum);
 							ds_stack_push(checklist, (xx+i) + ((yy+j)*global.map_width) );
 							break;
 					}
@@ -76,15 +80,9 @@ for(var xx = 0; xx < global.map_width; xx++){
 			checked[yy, xx] = true;
 			curSpot = global.map_grid[yy, xx];
 			
-			var q = floor(curSpot / 10);
-			
-			/*can be used to double check values
-			var r = (curSpot % 10);	
-			if r = x y z
-			r = 1;
-			*/
-			
-			global.map_grid[yy, xx] = q*10 + 1;
+			var pNum = floor(curSpot / 10);
+			//BUG: Is it here that the wrong colors get set?
+			global.map_grid[yy, xx] = ((10*pNum) + 1);
 		}
 	}
 	
@@ -92,30 +90,30 @@ for(var xx = 0; xx < global.map_width; xx++){
 
 for(var xx = 0; xx < global.map_width; xx++){
 	for(var yy = 0; yy < global.map_height; yy++){
-		var value = global.map_grid[yy, xx];
-		var t = 0;
+		var gridValue = global.map_grid[yy, xx];
+		var newTile = 0;
 
-		if(value == 0){
-			t = 1;
+		if(gridValue == 0){
+			newTile = 1;
 		}
-		else if(value == 1){
-			t = 2;
+		else if(gridValue == 1){
+			newTile = 2;
 		}
 		else{
-			var q = floor(value / 10);
-			var r = (value % 10);
-			if(r == 0){
-				r = 2;
+			var pNum = floor(gridValue / 10);
+			var tValue = (gridValue % 10);
+			if(tValue == 0){
+				tValue = 2;
 			}
-			else if( (r >= 1) && (r <= 5)){
-				r = 1;
+			else if( (tValue >= 1) && (tValue <= 5)){
+				tValue = 1;
 			}
 
-			t = q*3 + r;
+			//BUG: Is it here that the wrong colors get set?
+			newTile = ((3*pNum) + tValue);
 		}
 
-		//layer_set_visible(layer_get_id("tl_build"), visible);
-		tilemap_set(layer_tilemap_get_id("tl_build"), t, xx, yy);
+		tilemap_set(layer_tilemap_get_id("tl_build"), newTile, xx, yy);
 		
 	}	
 }

@@ -23,6 +23,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "79c44a8e-5829-4e50-90ea-ae63bfcbd821"
+        },
+        {
+            "id": "5bd63050-ec03-4e85-befe-1a279c9ed1c9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "79c44a8e-5829-4e50-90ea-ae63bfcbd821"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -42,34 +52,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "5739c48e-ee01-4e34-8bf3-3c31f01bd7a0",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "16",
-            "varName": "adjustX",
-            "varType": 1
-        },
-        {
-            "id": "f0cb568d-aff1-4123-97cf-dab65cd55cab",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "16",
-            "varName": "adjustY",
-            "varType": 1
-        },
         {
             "id": "e731ec8e-5261-495a-a771-f44568baa708",
             "modelName": "GMObjectProperty",
@@ -113,7 +95,7 @@
             "varType": 3
         },
         {
-            "id": "58aa7ea3-9b20-4624-84ed-05116c005f93",
+            "id": "fcce9b17-0058-4a5a-8fd7-f8e8109b6ded",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -122,23 +104,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "curRotation",
-            "varType": 1
-        },
-        {
-            "id": "62e1b051-8ef6-408c-ba45-70753084ee23",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "1",
-            "varName": "curAlpha",
-            "varType": 0
+            "value": "$FFFFFFFF",
+            "varName": "pColor",
+            "varType": 7
         }
     ],
     "solid": true,

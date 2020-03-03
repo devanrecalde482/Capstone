@@ -10,17 +10,7 @@ if(timerOn){
 		phaseTime -= 1/global.gSpeed;
 		clock.image_index = floor(phaseTime);
 	
-		if(phaseTime <= 0){
-			with(o_Player){
-				if(global.phase == 0){
-					keyboard_key_press(keybinds[5]);
-				}
-				can_move = false;
-			}
-				
-			
-		}
-		else if(global.phase == 0){
+		if(global.phase == 0){
 			if( (player1.num_castles_enclosed > 0) && (player2.num_castles_enclosed > 0) ){
 				phaseTime = 0;
 			}
