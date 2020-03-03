@@ -1,8 +1,8 @@
 {
-    "id": "3fd82791-86d6-46a3-bb57-8e418a5aaf30",
+    "id": "519a9dc9-29bd-4124-ac4c-25a86f64e938",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Add_To_Grid",
+    "name": "Set_Start_Castle",
     "IsCompatibility": false,
     "IsDnD": false
 }

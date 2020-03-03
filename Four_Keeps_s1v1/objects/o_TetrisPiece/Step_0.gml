@@ -40,7 +40,6 @@ if(can_move){
 		//rotate
 		else if(keyboard_check_pressed(player.keybinds[4])){
 			image_index++;
-			
 		}
 
 		if( !Valid_move( self ) ){
@@ -59,26 +58,26 @@ if(can_move){
 			image_alpha = 0.5;
 		}
 
-
 		//place
 		if(keyboard_check_pressed(player.keybinds[5])){
 			if(valid_spot){	
-				Add_To_Grid(self, o_TetrisPiece);
-
-				FloodAll();
-				CheckCastles();
+				Add_Piece(self);
 
 				var range = ds_list_size(global.tPieces)-1;
 				if(global.curRound < 2){
 					range = 2;
 				}
 		
+				//TODO: This can just change the piece's sprite
 				var newPiece = instance_create_layer(x, y, "pieces", ds_list_find_value(global.tPieces, irandom_range(0,range)));
 				player.piece = newPiece;
 				newPiece.player = player;
 				newPiece.can_move = true;
 
-				can_move = false;
+				FloodAll();
+				CheckCastles();
+				
+				instance_destroy(self);
 				
 			}
 		}

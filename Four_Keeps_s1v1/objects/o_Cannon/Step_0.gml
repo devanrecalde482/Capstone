@@ -38,8 +38,6 @@ if(can_move){
 			y = yy;
 		}
 	
-		
-	
 		if(place_empty(x,y)){
 			var tx = floor(x/32);
 			var ty = floor(y/32);

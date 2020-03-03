@@ -9,14 +9,11 @@ switch(global.phase){
 	case 0: {
 		with(o_Player){
 			
-			//BUG: Is this where the keypress sometimes fials?
 			if(cursor!= noone){
-				canMove = true;
-				keyboard_key_press(keybinds[5]);
-				instance_destroy( cursor );
+				Set_Start_Castle(cursor);
 			}
 			cursor = noone;
-			canMove = false;
+			can_move = false;
 		}
 	}
 	break;

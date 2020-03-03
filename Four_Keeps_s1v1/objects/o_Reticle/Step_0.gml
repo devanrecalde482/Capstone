@@ -38,6 +38,7 @@ if(player.can_move){
 		y = yy;
 	}
 	
+	var curTurret = player.current_turret;
 	//rotate through other turrets if avaliable
 	if(keyboard_check(player.keybinds[6]))
 	{
@@ -64,22 +65,23 @@ if(player.can_move){
 		}until((curCannon != noone) && (curCannon.enabled))
 	}
 	
-	var sName = "s_reticle";
-	switch( player.current_turret ){
-		case 0:
-			sName = "s_Reticle"; break;
-		case 1:
-			sName = "s_target_volcano"; break;
-		case 2:
-			sName = "s_target_laser"; break;
-		case 3:
-			sName = "s_target_mangonel"; break;
-		
-		default:
-			sName = "s_Reticle"; break;
+	if(curTurret != player.current_turret){
+		var sName = "s_Reticle";
+		switch( player.current_turret ){
+			case 0:
+				sName = "s_Reticle"; break;
+			case 1:
+				sName = "s_target_volcano"; break;
+			case 2:
+				sName = "s_target_laser"; break;
+			case 3:
+				sName = "s_target_mangonel"; break;
+			default:
+				sName = "s_Reticle"; break;
+		}
+		image_index = asset_get_index(sName);
 	}
 		
-	image_index = asset_get_index(sName);
 		
 	//fire
 	if(keyboard_check_pressed(player.keybinds[5])){
@@ -89,14 +91,14 @@ if(player.can_move){
 		{
 			var curCannon = player.list_cannons[1,0];
 			if( (curCannon.enabled) && (!curCannon.cooldown) && (curCannon.enabled) ){
-			ball = 	instance_create_layer(curCannon.x, curCannon.y, "pieces", o_fireball);
-			ball.targetX = x;
-			ball.targetY = y;
-			ball.source = curCannon;
-			ball.fired = true;
+				ball = 	instance_create_layer(curCannon.x, curCannon.y, "pieces", o_fireball);
+				ball.targetX = x;
+				ball.targetY = y;
+				ball.source = curCannon;
+				ball.fired = true;
 			
-			curCannon.cooldown = true;				
-			fired = true;
+				curCannon.cooldown = true;				
+				fired = true;
 			}
 		}
 		//laser/ one time straight line, will add more interactions with this later
