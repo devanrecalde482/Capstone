@@ -34,8 +34,9 @@ if(keyboard_check_pressed(confirmButt))
 	
 	if(selected == 2) // Stats by default
 	{
-		show_message(	"Player 1: arrow keys, right shift, enter\n" +
-						"Player 2: wasd, r, t");
+		
+		show_message(	"Player 1: Move: arrow keys, Rotate: right shift, Action: enter,\nCycle Weapons: numpad 1 and 2 \n\n" +
+						"Player 2: Move: wasd, Rotate: r, Action: t, Cycle Weapons: q and e");
 
 	}
 	
