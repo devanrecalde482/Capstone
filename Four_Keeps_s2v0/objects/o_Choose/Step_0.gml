@@ -6,26 +6,44 @@ if(can_move){
 	
 		//next
 		if(keyboard_check_pressed(player.keybinds[0]) || keyboard_check_pressed(player.keybinds[2])){
-			player.starting_castle++;
-			if(player.starting_castle > 1){
-				player.starting_castle = 0;
+			capNum++;
+			if(capNum >= global.numOfCapturables){
+				capNum = 0;
 			}
+			while(player.list_capturables[capNum].object_index != o_Castle){
+				capNum++;
+				if(capNum >= global.numOfCapturables){
+					capNum = 0;
+				}
+			}
+			
+			x = player.list_capturables[capNum].x;
+			y = player.list_capturables[capNum].y;
 		}
 
 		//previous
 		else if(keyboard_check_pressed(player.keybinds[1]) || keyboard_check_pressed(player.keybinds[3])){
-			player.starting_castle--;
-			if(player.starting_castle < 0){
-				player.starting_castle = 1;
+			capNum--;
+			if(capNum < 0){
+				capNum = (global.numOfCapturables-1);
 			}
+			while(player.list_capturables[capNum].object_index != o_Castle){
+				capNum--;
+				if(capNum < 0){
+					capNum = (global.numOfCapturables-1);
+				}
+			}
+			
+			x = player.list_capturables[capNum].x;
+			y = player.list_capturables[capNum].y;
 		}
 			
-		x = player.list_castles[player.starting_castle].x;
-		y = player.list_castles[player.starting_castle].y;
-				
 		//choose starting castle
 		if(keyboard_check_pressed(player.keybinds[5])){
-			Set_Start_Castle(self);
+			player.x = x;
+			player.y = y;
+			Set_Start_Castle(player);
+			instance_destroy(self);
 		}
 	}
 }

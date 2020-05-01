@@ -2,7 +2,7 @@
     "id": "91498b71-c3b1-4a1e-a888-e5849ae92c14",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_laser",
+    "name": "o_Laser",
     "eventList": [
         {
             "id": "0ef5fec0-8f29-4bea-86c1-1e4f72718694",
@@ -27,7 +27,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "4643ac26-9e29-45fb-9832-e2d24e5fed49",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

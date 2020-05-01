@@ -1,19 +1,13 @@
-///@function Set_start_Castle(cursor)
+///@function Set_start_Castle(player)
 ///@description setup the starting castle locatoin
 
-//FIXME: HACK: Uses the cursor but thats a horrible way to do it
 
-var myCursor = argument0;
-var myPlayer = myCursor.player;
-
+var myPlayer = argument0;
 
 myPlayer.can_move = false;
-myPlayer.startX = myCursor.x;
-myPlayer.startY = myCursor.y;
 myPlayer.cursor = noone;
 			
-			
-var curPiece = instance_create_layer(myCursor.x, myCursor.y, "pieces", o_Single);
+var curPiece = instance_create_layer(myPlayer.x, myPlayer.y, "pieces", o_Single);
 curPiece.player = myPlayer;
 		
 //create walls around the castle
@@ -48,9 +42,6 @@ with(curPiece){
 			
 FloodAll();
 CheckEnclosed();
-			
-
-instance_destroy( myCursor );
 
 
 

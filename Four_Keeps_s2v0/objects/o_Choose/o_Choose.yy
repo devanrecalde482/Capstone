@@ -83,6 +83,20 @@
             "value": "$FFFFFFFF",
             "varName": "pColor",
             "varType": 7
+        },
+        {
+            "id": "5444dbe4-5f1c-4e10-8389-5f2b323ab1ad",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "capNum",
+            "varType": 1
         }
     ],
     "solid": false,

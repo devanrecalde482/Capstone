@@ -22,15 +22,12 @@ with(o_Player){
 			piece = noone;
 		}
 		
-		if(num_castles_enclosed <= 0){
-			hp--;	
-		}	
 	}
 	
 	can_move = false;
 	
 	if(global.phase == 4){
-		global.phase = 0; 
+		global.phase = 1; 
 		global.curRound++;
 	}
 	

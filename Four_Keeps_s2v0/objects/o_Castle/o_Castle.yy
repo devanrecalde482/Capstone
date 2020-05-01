@@ -8,7 +8,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "6a7a92ff-c39e-4e30-8445-2f5d2fc7561f",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -36,20 +36,6 @@
             "value": "noone",
             "varName": "player",
             "varType": 5
-        },
-        {
-            "id": "11834f29-58d6-45ee-9f20-2ccae78efeb8",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "enclosed",
-            "varType": 3
         }
     ],
     "solid": false,

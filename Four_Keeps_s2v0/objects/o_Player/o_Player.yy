@@ -33,48 +33,6 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "f6dd30e9-77ec-49dc-9a13-eb97b6e2d7c8",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "startX",
-            "varType": 1
-        },
-        {
-            "id": "6808f9ef-af9b-4154-97dc-2274fed0836e",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "startY",
-            "varType": 1
-        },
-        {
-            "id": "9261e82f-22c9-494a-b1b7-5286421e01c8",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "1",
-            "varName": "hp",
-            "varType": 1
-        },
-        {
             "id": "2827fff1-f88c-4571-9922-4028d2edc354",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -87,20 +45,6 @@
             "value": "0",
             "varName": "can_move",
             "varType": 3
-        },
-        {
-            "id": "3ecadea4-da83-40e3-b2d8-0c3580860a22",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "starting_castle",
-            "varType": 1
         },
         {
             "id": "d60a64ff-4f7b-4983-b42d-891edbd8ca18",

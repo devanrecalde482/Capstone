@@ -61,41 +61,36 @@ if(can_move){
 			valid_spot = false;
 		}
 	
-
 		//place cannon
 		if(keyboard_check_pressed(player.keybinds[5])){
 			if(valid_spot){
 				can_move = false;
-			
-				if(player.saved_cannons > 0){
-
-					var newCannon = instance_create_layer(x, y, "pieces", o_Cannon);
-					var temp = player.list_cannons;
-					player.list_cannons[player.num_of_cannons] = newCannon;
-					newCannon.player = player;
-					newCannon.can_move = false;
+				
+				var newCannon = instance_create_layer(x, y, "pieces", o_Cannon);
+				var temp = player.list_cannons;
+				player.list_cannons[player.num_of_cannons] = newCannon;
+				newCannon.player = player;
+				newCannon.can_move = false;
 					
-					player.num_of_cannons++;
-					player.saved_cannons--;
+				player.num_of_cannons++;
+				player.saved_cannons--;
 					
-					if(player.saved_cannons <= 0){
-						player.can_place_cannon = false;
-						player.can_move = false;
-						player.cursor = noone;
-						instance_destroy(self);
-					}
-					else{
-						layer = layer_get_id("UI");
-						can_move = true;
-					}
-				}
-				else{
+				if(player.saved_cannons <= 0){
 					player.can_place_cannon = false;
 					player.can_move = false;
 					player.cursor = noone;
 					instance_destroy(self);
 				}
-
+				else{
+					layer = layer_get_id("UI");
+					can_move = true;
+					
+					//TODO: Check if there are available spots
+					//check every spot, and see if spot is valid
+					//as soon as a spot is found, exit out
+					//if it exits out after checking everything, false, can't place
+				}
+				
 			}
 		}
 	}

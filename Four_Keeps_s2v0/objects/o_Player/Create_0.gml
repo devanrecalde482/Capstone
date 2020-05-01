@@ -3,14 +3,13 @@
 keybinds = [];
 cursor = noone;
 
-list_castles = [];
+hp = 3;
 
-//list_cannons = [];
-list_cannons = [global.totalWeapons];
+list_capturables = [];
+list_cannons = [];
+
 current_turret = 0;
 can_place_cannon = true;
 
 piece = noone;
-
-//move_snap(global.tile_size, global.tile_size);
 

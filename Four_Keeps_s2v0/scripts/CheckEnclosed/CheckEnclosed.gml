@@ -2,39 +2,29 @@
 ///@description check players' castles
 
 with(o_Player){
-	var tcast;
+	var tCap;
 	num_castles_enclosed = 0;
 
-	for(var i = 0; i < 2; i++){
-		tcast = list_castles[i];
-		
-		var spot = global.map_grid[floor(tcast.y/32), floor(tcast.x/32)];
+	for(var i = 0; i < global.numOfCapturables; i++){
+		tCap = list_capturables[i];
+
+		var spot = global.map_grid[floor(tCap.y/32), floor(tCap.x/32)];
 
 		if((spot % 10) == 1){
-			num_castles_enclosed++;
-			tcast.enclosed = true;
-			tcast.image_index = 1;
+			tCap.enclosed = true;
+			if(tCap.object_index == o_Castle){
+				num_castles_enclosed++;
+				tCap.image_index = 1;
+			}
 		}
-		else if(tcast.enclosed){
-			//num_castles_enclosed--;
-			tcast.enclosed = false;
-			tcast.image_index = 0;
+		else{
+			tCap.enclosed = false;
+			if(tCap.object_index == o_Castle){
+				tCap.image_index = 0;
+			}
 		}
-
 	}
 	
-	for(var i = 1; i < global.totalWeapons; i++)
-	{
-			tcast = list_cannons[i,0]; 
-			var spot = global.map_grid[floor(tcast.y/32), floor(tcast.x/32)];
-				
-			if((spot % 10) == 1)
-				tcast.enabled = true;
-
-			else if(tcast.enabled)
-				tcast.enabled = false;
-	}
-	
-	
+	//TODO: Check if cannons are enclosed too
 	
 }

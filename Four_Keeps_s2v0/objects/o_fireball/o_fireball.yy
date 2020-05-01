@@ -2,7 +2,7 @@
     "id": "5e930408-0d6f-45c6-ba24-2662b11bd945",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_fireball",
+    "name": "o_Fireball",
     "eventList": [
         {
             "id": "09fe363c-9405-4cc8-aa6e-9bf103eaf287",

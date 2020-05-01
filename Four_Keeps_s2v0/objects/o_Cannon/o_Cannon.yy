@@ -37,7 +37,7 @@
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "1ec6bb11-b331-460e-9272-1451b8caad34",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -92,34 +92,6 @@
             "resourceFilter": 1023,
             "value": "False",
             "varName": "can_move",
-            "varType": 3
-        },
-        {
-            "id": "e882bf75-4b77-45c6-b6a5-6cabd81aba77",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "True",
-            "varName": "enabled",
-            "varType": 3
-        },
-        {
-            "id": "3eb8fa55-0db9-47a1-9a41-81080ba9c220",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "cooldown",
             "varType": 3
         },
         {

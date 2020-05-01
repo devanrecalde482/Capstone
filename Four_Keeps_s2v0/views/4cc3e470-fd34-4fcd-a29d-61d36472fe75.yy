@@ -8,11 +8,10 @@
         "bf727a03-aa4e-497a-ad03-90128aa0081d",
         "91498b71-c3b1-4a1e-a888-e5849ae92c14",
         "44546577-7439-4023-a16e-92b5e5d75726",
-        "e9e98a71-c73b-48ea-85e7-cf86bafb5c2a",
-        "3626bab0-ee79-4a0d-8566-1ca810939f5a"
+        "e9e98a71-c73b-48ea-85e7-cf86bafb5c2a"
     ],
     "filterType": "GMObject",
-    "folderName": "Offense",
+    "folderName": "Projectiles",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

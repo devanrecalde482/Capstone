@@ -1,0 +1,1 @@
+ammo = o_Fireball

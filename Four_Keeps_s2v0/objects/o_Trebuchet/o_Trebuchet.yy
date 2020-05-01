@@ -1,22 +1,24 @@
 {
-    "id": "4dd38778-2c69-4bf9-9e0b-4fc25a96f94a",
+    "id": "ead6f609-5b9a-45ca-a76e-530733546c52",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_Volcano",
+    "name": "o_Trebuchet",
     "eventList": [
         {
-            "id": "22f81012-5724-42d5-80e2-05a828505331",
+            "id": "23a7bb5f-49e9-453b-a847-74287b0ef043",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "4dd38778-2c69-4bf9-9e0b-4fc25a96f94a"
+            "m_owner": "ead6f609-5b9a-45ca-a76e-530733546c52"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
+    "overriddenProperties": [
+        
+    ],
     "parentObjectId": "1ec6bb11-b331-460e-9272-1451b8caad34",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -35,6 +37,6 @@
         
     ],
     "solid": false,
-    "spriteId": "81685ee7-6ba0-4d7c-a8a9-101b8e06653f",
+    "spriteId": "ae783320-f0a2-4b27-a305-ba2de1235afd",
     "visible": true
 }

@@ -1,16 +1,14 @@
 {
-    "id": "ead6f609-5b9a-45ca-a76e-530733546c52",
+    "id": "6a7a92ff-c39e-4e30-8445-2f5d2fc7561f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_mangonel",
+    "name": "o_Capturable",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": [
-        
-    ],
-    "parentObjectId": "6a7a92ff-c39e-4e30-8445-2f5d2fc7561f",
+    "overriddenProperties": null,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -26,7 +24,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "04e73faf-9535-4dd9-bcf8-bb2a9c8e614e",
+            "id": "c9eef4e5-3619-4f3d-b83c-effe43d5e87a",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -35,12 +33,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "cooldown",
+            "value": "False",
+            "varName": "enclosed",
             "varType": 3
         }
     ],
     "solid": false,
-    "spriteId": "ae783320-f0a2-4b27-a305-ba2de1235afd",
+    "spriteId": "b8e2f243-e05f-4cfe-890e-eeb33aefbac8",
     "visible": true
 }

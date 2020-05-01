@@ -1,8 +1,8 @@
 {
-    "id": "493fff67-63d6-426e-8f8f-bad1ab6df32d",
+    "id": "4643ac26-9e29-45fb-9832-e2d24e5fed49",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_longBarrier",
+    "name": "o_Projectile",
     "eventList": [
         
     ],
@@ -23,7 +23,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
-    "solid": true,
-    "spriteId": "c4c96b51-3e98-484e-944f-d225385aa697",
-    "visible": false
+    "solid": false,
+    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "visible": true
 }

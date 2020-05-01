@@ -9,6 +9,7 @@ global.curRound = 1;
 global.numberOfPlayers = 2;
 global.castles = 2;
 global.totalWeapons = 4;
+global.numOfCapturables = 5;
 
 global.phase = 0;
 phaseTime = 0; //rename to phaseTime?
@@ -22,15 +23,15 @@ global.gSpeed = game_get_speed(gamespeed_fps);
 
 set_piece_list();
 
-global.map_width = 40;
-global.map_height = 25;
+global.map_width = room_width / 32;
+global.map_height = room_height / 32;
 
 InitializeMap();
 
 //TODO: Make initialize players take num of players
-InitializePlayers();
+InitializePlayers(global.numberOfPlayers);
 
-clock = instance_create_layer(640, 400, "UI", o_Clock);
+clock = instance_create_layer(room_width/2, room_height/2, "UI", o_Clock);
 clock.visible = false;
 
 FloodAll();

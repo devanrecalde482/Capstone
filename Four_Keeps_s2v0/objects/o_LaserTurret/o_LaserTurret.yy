@@ -2,13 +2,22 @@
     "id": "7073cfda-6b9f-4190-801d-4eefa108017d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_laser_turret",
+    "name": "o_LaserTurret",
     "eventList": [
-        
+        {
+            "id": "fddc1715-21ca-46d9-ac9d-b135ec4827d3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "7073cfda-6b9f-4190-801d-4eefa108017d"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "6a7a92ff-c39e-4e30-8445-2f5d2fc7561f",
+    "parentObjectId": "1ec6bb11-b331-460e-9272-1451b8caad34",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -23,20 +32,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "eba489bb-bcbe-4d79-924d-e4d9bde6e548",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "cooldown",
-            "varType": 3
-        }
+        
     ],
     "solid": false,
     "spriteId": "ee0d5ce5-08ca-4954-9153-ea94e13ddf81",
