@@ -1,1 +1,2 @@
-ammo = o_Laser
+ammo = o_Laser;
+cooldown = 20;

@@ -5,16 +5,6 @@
     "name": "o_Fireball",
     "eventList": [
         {
-            "id": "09fe363c-9405-4cc8-aa6e-9bf103eaf287",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "5e930408-0d6f-45c6-ba24-2662b11bd945"
-        },
-        {
             "id": "6ae8361a-e1b1-4f53-953d-94c3535a84b4",
             "modelName": "GMEvent",
             "mvc": "1.0",

@@ -8,4 +8,4 @@ size += velocity;
 			instance_destroy(wall);
 		}
 	
-	alarm[0]= velocity*2
+	alarm[0]  = velocity*2

@@ -14,8 +14,6 @@ with(o_Player){
 	piece.player = self;
 	piece.can_move = true;
 	can_move = true;
-	with(o_laser)
-		instance_deactivate_object(o_laser);
 }
 
 SetTimer();

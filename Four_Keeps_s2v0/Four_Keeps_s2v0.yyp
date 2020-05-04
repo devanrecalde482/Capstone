@@ -31,14 +31,6 @@
     },
     "resources": [
         {
-            "Key": "05f4e887-a389-4657-9895-1470f888bbac",
-            "Value": {
-                "id": "901e7779-9feb-4818-97cd-f3a1c322f5a6",
-                "resourcePath": "notes\\compatibility_report_151119_942214221.yy",
-                "resourceType": "GMNotes"
-            }
-        },
-        {
             "Key": "06adb687-b609-4238-b486-d5eb50bcd163",
             "Value": {
                 "id": "5f61fed7-9fdd-4c66-abf4-82101ed36eca",
@@ -68,14 +60,6 @@
                 "id": "df38f967-2bb3-48bd-802c-710475d8d869",
                 "resourcePath": "views\\13ed2770-2e38-4f7e-a733-59e14bba7402.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "140a6097-92d3-439e-9ecc-1e29087fba75",
-            "Value": {
-                "id": "15c8025a-2922-4b2b-916a-2afb244957f7",
-                "resourcePath": "notes\\compatibility_report_151119_93501351.yy",
-                "resourceType": "GMNotes"
             }
         },
         {
@@ -884,14 +868,6 @@
                 "id": "e0f2f987-2d59-4b5d-8509-eb12afc96f2c",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
-            }
-        },
-        {
-            "Key": "cf0e48e7-ed3f-4ec8-9bd9-0b7a2ba85187",
-            "Value": {
-                "id": "ebadb36f-96f0-4e60-b454-31ae7a2937bb",
-                "resourcePath": "notes\\compatibility_report_161119_2023552355.yy",
-                "resourceType": "GMNotes"
             }
         },
         {

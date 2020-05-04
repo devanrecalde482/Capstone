@@ -1,13 +1,11 @@
-///@decription projectile
-
 if(fired){
 	move_towards_point(targetX, targetY, velocity);
 	fired = false;
 }
 
 if(!Valid_move(self)){
-	instance_destroy(self);
-	source.cooldown = false;
+	source.recharging = false;
+	instance_destroy(self); 
 }
 else if( distance_to_point(targetX,targetY) <= 0 ){
 	targetX = 32*(floor(targetX / 32));
@@ -18,8 +16,7 @@ else if( distance_to_point(targetX,targetY) <= 0 ){
 		instance_destroy(wall);
 	}
 	
-	source.cooldown = false;
-	
+	source.recharging = false;
 	instance_destroy(self);
 }
 

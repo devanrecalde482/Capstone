@@ -1,1 +1,2 @@
-ammo = o_Rock
+ammo = o_Rock;
+cooldown = 10;

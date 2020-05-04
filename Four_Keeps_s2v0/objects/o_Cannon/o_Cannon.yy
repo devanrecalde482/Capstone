@@ -5,16 +5,6 @@
     "name": "o_Cannon",
     "eventList": [
         {
-            "id": "8d5f5d75-2025-48c7-8d7e-99a6d8171689",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "3626bab0-ee79-4a0d-8566-1ca810939f5a"
-        },
-        {
             "id": "0d00ef46-40ca-4e2a-bcd3-002a8b6964c3",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -33,10 +23,22 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "3626bab0-ee79-4a0d-8566-1ca810939f5a"
+        },
+        {
+            "id": "c8b503b3-29fc-42ee-ad6a-91dfc5ba1bfc",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "3626bab0-ee79-4a0d-8566-1ca810939f5a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
+    "overriddenProperties": [
+        
+    ],
     "parentObjectId": "1ec6bb11-b331-460e-9272-1451b8caad34",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -81,20 +83,6 @@
             "varType": 3
         },
         {
-            "id": "79123628-f453-4b52-a234-781a48853f5c",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "False",
-            "varName": "can_move",
-            "varType": 3
-        },
-        {
             "id": "0fa27821-be89-489e-8544-9e31abb85b71",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -107,6 +95,20 @@
             "value": "$FFFFFFFF",
             "varName": "pColor",
             "varType": 7
+        },
+        {
+            "id": "cbd907ed-dbf2-4987-bf98-9aec0aa6e11b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "can_move",
+            "varType": 3
         }
     ],
     "solid": false,

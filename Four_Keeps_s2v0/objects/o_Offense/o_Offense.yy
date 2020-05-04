@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_Offense",
     "eventList": [
-        
+        {
+            "id": "d57ff771-724e-4042-8465-836e4cb919f3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "1ec6bb11-b331-460e-9272-1451b8caad34"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

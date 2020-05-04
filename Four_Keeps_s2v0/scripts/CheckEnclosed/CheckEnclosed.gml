@@ -27,4 +27,17 @@ with(o_Player){
 	
 	//TODO: Check if cannons are enclosed too
 	
+	for(var i = 0; i < num_of_cannons; i++){
+		var tCannon = list_cannons[i];
+
+		var spot = global.map_grid[floor(tCannon.y/32), floor(tCannon.x/32)];
+
+		if((spot % 10) == 1){
+			tCannon.enclosed = true;
+		}
+		else{
+			tCannon.enclosed = false;
+		}
+	}
+	
 }

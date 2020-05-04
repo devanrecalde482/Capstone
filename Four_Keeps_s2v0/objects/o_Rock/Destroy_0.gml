@@ -1,1 +1,1 @@
-instance_create_layer(x,y,"pieces",o_explosion);
+instance_create_layer(x,y,"pieces",o_Explosion);

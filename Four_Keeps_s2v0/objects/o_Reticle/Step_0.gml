@@ -57,24 +57,26 @@ if(player.can_move){
 				cycling = false;
 			}
 			
-			var cap = player.list_capturables[selection];
-			if(cap.enclosed == true){
-				if( (cap.object_index != o_Castle) && (cap.recharging == false)){
-					cycling = false;
+			if(selection < global.numOfCapturables){
+				var cap = player.list_capturables[selection];
+				if(cap.enclosed == true){
+					if( (cap.object_index != o_Castle) && (cap.recharging == false)){
+						cycling = false;
 					
-					var name = "s_Reticle";
-					if(cap.object_index == o_Volcano){
-						name = "s_target_volcano";
-					}
-					else if(cap.object_index == o_Trebuchet){
-						name = "s_target_mangonel";
-					}
-					else if(cap.object_index == o_LaserTurret){
-						name = "s_target_laser"; 
-					}
+						var name = "s_Reticle";
+						if(cap.object_index == o_Volcano){
+							name = "s_target_volcano";
+						}
+						else if(cap.object_index == o_Trebuchet){
+							name = "s_target_mangonel";
+						}
+						else if(cap.object_index == o_LaserTurret){
+							name = "s_target_laser"; 
+						}
 					
-					sprite_index = asset_get_index(name);
+						sprite_index = asset_get_index(name);
 					
+					}
 				}
 			}
 		}
@@ -98,24 +100,26 @@ if(player.can_move){
 				cycling = false;
 			}
 			
-			var cap = player.list_capturables[selection];
-			if(cap.enclosed == true){
-				if( (cap.object_index != o_Castle) && (cap.recharging == false)){
-					cycling = false;
+			if(selection < global.numOfCapturables){
+				var cap = player.list_capturables[selection];
+				if(cap.enclosed == true){
+					if( (cap.object_index != o_Castle) && (cap.recharging == false)){
+						cycling = false;
 					
-					var name = "s_Reticle";
-					if(cap.object_index == o_Volcano){
-						name = "s_target_volcano";
-					}
-					else if(cap.object_index == o_Trebuchet){
-						name = "s_target_mangonel";
-					}
-					else if(cap.object_index == o_LaserTurret){
-						name = "s_target_laser"; 
-					}
+						var name = "s_Reticle";
+						if(cap.object_index == o_Volcano){
+							name = "s_target_volcano";
+						}
+						else if(cap.object_index == o_Trebuchet){
+							name = "s_target_mangonel";
+						}
+						else if(cap.object_index == o_LaserTurret){
+							name = "s_target_laser"; 
+						}
 					
-					sprite_index = asset_get_index(name);
+						sprite_index = asset_get_index(name);
 					
+					}
 				}
 			}
 		}
@@ -165,9 +169,8 @@ if(player.can_move){
 		//fire projectile
 		if(curTurret != noone){
 			curTurret.recharging = true;
-			curTurret.cooldown = 10;
 			
-			if(cap.object_index == o_Trebuchet){
+			if(curTurret.object_index == o_Trebuchet){
 				//TODO: fire multiple projectiles at random intervals
 				for(i = 0; i < 1; i++){
 					var projectile = instance_create_layer(curTurret.x, curTurret.y, "pieces", curTurret.ammo);
@@ -211,9 +214,8 @@ if(player.can_move){
 				projectile.source = curTurret;
 				projectile.fired = true;
 
-				if(cap.object_index == o_LaserTurret){
-					projectile.image_angle = point_direction(curTurret.x,curTurret.y,x,y);
-					curTurret.cooldown = 20;
+				if(curTurret.object_index == o_LaserTurret){
+					projectile.image_angle = point_direction(curTurret.x,curTurret.y,x,y); 
 				}
 				
 			}

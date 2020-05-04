@@ -1,7 +1,7 @@
 /// @description 
 // check around when destroyed to see if walls are there and destroy any in that range
 
-instance_create_layer(x,y,"pieces",o_explosion);
+instance_create_layer(x,y,"pieces",o_Explosion);
 for(j = -1; j <= 1; j++)
 {
 yy = (y + global.tile_size * j);

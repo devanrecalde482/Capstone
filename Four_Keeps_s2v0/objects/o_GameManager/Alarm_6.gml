@@ -27,7 +27,7 @@ with(o_Player){
 	can_move = false;
 	
 	if(global.phase == 4){
-		global.phase = 1; 
+		global.phase = 0; 
 		global.curRound++;
 	}
 	
