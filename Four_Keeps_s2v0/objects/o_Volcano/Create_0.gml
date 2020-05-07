@@ -1,2 +1,2 @@
 ammo = o_Fireball;
-cooldown = 10;
+cooldown = 5;

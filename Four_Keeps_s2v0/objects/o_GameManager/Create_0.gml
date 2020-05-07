@@ -15,7 +15,7 @@ global.phase = 0;
 phaseTime = 0; //rename to phaseTime?
 //currently 10/10/15/20 seems to be best?
 timers = [10, 10, 15, 20, 0, 0, 0, 0]; 
-gameTime = 0; //total time game is running. so good for if 10m limit
+//gameTime = 0; //total time game is running. so good for if 10m limit
 
 game_set_speed(60, gamespeed_fps);
 global.gSpeed = game_get_speed(gamespeed_fps);

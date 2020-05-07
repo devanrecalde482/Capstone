@@ -1,2 +1,2 @@
 ammo = o_Rock;
-cooldown = 10;
+cooldown = 5;

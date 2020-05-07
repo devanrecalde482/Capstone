@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "2072f628-b788-4793-a40a-c0fac5bf0847",
+            "Value": {
+                "id": "c5e8cbcf-59bc-4441-bc31-827b06542ad1",
+                "resourcePath": "sprites\\s_Keep\\s_Keep.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2bed44a9-4344-4263-85f5-575b302d06cc",
             "Value": {
                 "id": "cea7dfd6-b500-40ef-8ad7-40d6270148e2",
@@ -195,6 +203,14 @@
             "Value": {
                 "id": "533c96f5-c62d-4fb7-b948-df33c485a91e",
                 "resourcePath": "sprites\\s_Ball\\s_Ball.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3a4340de-b9b9-402a-b47b-90c62443d02d",
+            "Value": {
+                "id": "3476768a-34ba-4230-b101-dea696a2523a",
+                "resourcePath": "sprites\\s_Keep2\\s_Keep2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -260,6 +276,14 @@
                 "id": "f8f84503-21c2-4950-889e-4fce07cf6881",
                 "resourcePath": "extensions\\Easy_Pause\\Easy_Pause.yy",
                 "resourceType": "GMExtension"
+            }
+        },
+        {
+            "Key": "409f06a1-9e36-416b-8e68-d76bd3a37d6f",
+            "Value": {
+                "id": "170170d5-1ee3-4449-96ce-40ec1fdf1a18",
+                "resourcePath": "sprites\\s_Catapult\\s_Catapult.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -415,6 +439,14 @@
             }
         },
         {
+            "Key": "614b4e92-fdec-4aa3-8b3d-f543b063bbb6",
+            "Value": {
+                "id": "be5dd12e-0ba4-4ced-ac25-297133a7a2c0",
+                "resourcePath": "sprites\\s_Cannon2\\s_Cannon2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6171ef6f-1311-43a1-8238-b19a27fef589",
             "Value": {
                 "id": "5ae22ee2-6f8d-4ddc-b2c5-da50a61b9b8d",
@@ -436,6 +468,14 @@
                 "id": "9198d681-5acf-41a5-8ca4-eaf5e71dc4b0",
                 "resourcePath": "views\\649d46ed-3627-4804-89c3-311fd24934a2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6508d262-10a0-4cb4-a5b2-2b5a99214a85",
+            "Value": {
+                "id": "176d6032-7454-4dac-8eb7-b980aa66858f",
+                "resourcePath": "sprites\\s_Ballista\\s_Ballista.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -535,6 +575,14 @@
             }
         },
         {
+            "Key": "7e9f3d63-d4f0-484e-9c51-54127d064a3c",
+            "Value": {
+                "id": "74331c3d-8226-4234-870a-7379003ad97a",
+                "resourcePath": "sprites\\s_Trebuchet\\s_Trebuchet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "80060d9c-84b7-434b-96e4-c14af9077043",
             "Value": {
                 "id": "738a7628-8356-4bd6-94b8-0c6800626540",
@@ -599,6 +647,14 @@
             }
         },
         {
+            "Key": "8fee880d-19e0-4f35-afe5-b3891a85b4f6",
+            "Value": {
+                "id": "5d9e0ce7-2931-4c3e-a89e-dd2edcb6f4af",
+                "resourcePath": "sprites\\s_Volcano2\\s_Volcano2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "90f228f0-0321-4e56-8199-7d875bfc65f0",
             "Value": {
                 "id": "0406d6cf-c5f2-4288-9abc-e45446ad1706",
@@ -623,6 +679,14 @@
             }
         },
         {
+            "Key": "937a54cf-3806-467c-ad16-5b675ff00eca",
+            "Value": {
+                "id": "66b5a217-ef0e-46ea-bd4f-22c1be4a91ab",
+                "resourcePath": "sprites\\s_Mountain\\s_Mountain.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9468ec17-3d9a-4365-844a-f1558fdfa6a9",
             "Value": {
                 "id": "2c1b821b-a44b-468a-bdb8-33f365227fe6",
@@ -635,6 +699,14 @@
             "Value": {
                 "id": "f7bb8dfc-85ed-46c5-964d-fcadaffdee30",
                 "resourcePath": "sprites\\s_Rock\\s_Rock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "99c41d49-c79c-47af-a9f7-342ae399aaae",
+            "Value": {
+                "id": "eba241e4-da06-4a15-b401-ce975496c1ab",
+                "resourcePath": "sprites\\s_Grass\\s_Grass.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -723,6 +795,14 @@
             "Value": {
                 "id": "5da29f70-26b3-48a3-b0d1-3c8bffc2da1a",
                 "resourcePath": "sprites\\s_TetT\\s_TetT.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b5817c00-230e-482e-a12a-d1a7f70644bd",
+            "Value": {
+                "id": "4a3f65fa-4a76-4de0-8438-d7a37545128b",
+                "resourcePath": "sprites\\s_Tower\\s_Tower.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -879,6 +959,14 @@
             }
         },
         {
+            "Key": "d2f834ae-4177-49d2-97d5-9e4b20412fa8",
+            "Value": {
+                "id": "5b687792-4f40-406d-b459-903cf8d79a6a",
+                "resourcePath": "sprites\\s_Volcano3\\s_Volcano3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d38d3442-507c-45af-a67a-a052caf097ca",
             "Value": {
                 "id": "baab1500-b3a3-42f4-988d-4af0567ab96c",
@@ -1012,6 +1100,14 @@
                 "id": "289b0db3-9e56-4b70-9d48-7a4be168856f",
                 "resourcePath": "objects\\o_L\\o_L.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fc5e3c54-d66c-4cea-830d-847dd311a236",
+            "Value": {
+                "id": "a4318395-6099-4fa8-adab-4bee07383a04",
+                "resourcePath": "sprites\\s_Water\\s_Water.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

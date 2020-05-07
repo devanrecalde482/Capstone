@@ -3,7 +3,7 @@
 //this bit may not really be different from what is used
 //gameTime += (delta_time*0.0000001) * game_get_speed(gamespeed_fps);
 
-gameTime += 1/global.gSpeed;
+//gameTime += 1/global.gSpeed;
 
 if(timerOn){
 	if(phaseTime > 0){
@@ -34,7 +34,9 @@ if(timerOn){
 	}
 	else if(instance_number(o_Projectile) > 0){
 		//wait
-
+		timerOn = false;
+		clock.visible = false;
+		alarm[6] = 3 * global.gSpeed;
 	}
 	else{		
 		

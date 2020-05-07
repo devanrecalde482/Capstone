@@ -16,6 +16,10 @@ with(o_Player){
 		cursor = noone;
 	}
 	
+	if(global.phase == 2){
+		instance_destroy(o_Projectile);
+	}
+	
 	if(global.phase == 3){
 		if(piece != noone){
 			instance_destroy(piece);

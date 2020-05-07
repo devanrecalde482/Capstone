@@ -1,2 +1,2 @@
 ammo = o_Laser;
-cooldown = 20;
+cooldown = 10;
