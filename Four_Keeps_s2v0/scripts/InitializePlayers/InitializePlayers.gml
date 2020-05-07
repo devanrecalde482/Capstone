@@ -66,7 +66,7 @@ with(o_Player){
 					instance_change(o_Trebuchet, true);
 				}
 				else if(list_cap_values[i-2] == 3){
-					instance_change(o_LaserTurret, true);
+					instance_change(o_Ballista, true);
 				}
 			
 			}

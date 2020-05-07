@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "o_Capturable",
     "eventList": [
-        
+        {
+            "id": "24aac003-1b2e-493b-8190-bde4ff6f812c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "6a7a92ff-c39e-4e30-8445-2f5d2fc7561f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

@@ -4,13 +4,14 @@
     "mvc": "1.1",
     "name": "58f7fb22-47d2-4859-b95b-6ba4051ca9e2",
     "children": [
-        "eec1ce44-1eb9-4658-b375-00456e461f83",
-        "81685ee7-6ba0-4d7c-a8a9-101b8e06653f",
-        "ae783320-f0a2-4b27-a305-ba2de1235afd",
-        "6119b7d8-1834-4024-865e-1298f6ac8187"
+        "b5817c00-230e-482e-a12a-d1a7f70644bd",
+        "6508d262-10a0-4cb4-a5b2-2b5a99214a85",
+        "3a4340de-b9b9-402a-b47b-90c62443d02d",
+        "8fee880d-19e0-4f35-afe5-b3891a85b4f6",
+        "7e9f3d63-d4f0-484e-9c51-54127d064a3c"
     ],
     "filterType": "GMSprite",
-    "folderName": "base",
+    "folderName": "Capturables",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

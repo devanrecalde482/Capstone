@@ -65,13 +65,13 @@ if(player.can_move){
 					
 						var name = "s_Reticle";
 						if(cap.object_index == o_Volcano){
-							name = "s_target_volcano";
+							name = "s_Target_Volcano";
 						}
 						else if(cap.object_index == o_Trebuchet){
-							name = "s_target_mangonel";
+							name = "s_Target_Trebuchet";
 						}
-						else if(cap.object_index == o_LaserTurret){
-							name = "s_target_laser"; 
+						else if(cap.object_index == o_Ballista){
+							name = "s_Target_Ballista"; 
 						}
 					
 						sprite_index = asset_get_index(name);
@@ -108,13 +108,13 @@ if(player.can_move){
 					
 						var name = "s_Reticle";
 						if(cap.object_index == o_Volcano){
-							name = "s_target_volcano";
+							name = "s_Target_Volcano";
 						}
 						else if(cap.object_index == o_Trebuchet){
-							name = "s_target_mangonel";
+							name = "s_Target_Trebuchet";
 						}
-						else if(cap.object_index == o_LaserTurret){
-							name = "s_target_laser"; 
+						else if(cap.object_index == o_Ballista){
+							name = "s_Target_Ballista"; 
 						}
 					
 						sprite_index = asset_get_index(name);
@@ -214,7 +214,7 @@ if(player.can_move){
 				projectile.source = curTurret;
 				projectile.fired = true;
 
-				if(curTurret.object_index == o_LaserTurret){
+				if(curTurret.object_index == o_Ballista){
 					projectile.image_angle = point_direction(curTurret.x,curTurret.y,x,y); 
 				}
 				

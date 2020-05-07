@@ -14,18 +14,12 @@ with(o_Player){
 			tCap.enclosed = true;
 			if(tCap.object_index == o_Castle){
 				num_castles_enclosed++;
-				tCap.image_index = 1;
 			}
 		}
 		else{
 			tCap.enclosed = false;
-			if(tCap.object_index == o_Castle){
-				tCap.image_index = 0;
-			}
 		}
 	}
-	
-	//TODO: Check if cannons are enclosed too
 	
 	for(var i = 0; i < num_of_cannons; i++){
 		var tCannon = list_cannons[i];

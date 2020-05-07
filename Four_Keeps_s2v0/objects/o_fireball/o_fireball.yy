@@ -5,17 +5,17 @@
     "name": "o_Fireball",
     "eventList": [
         {
-            "id": "6ae8361a-e1b1-4f53-953d-94c3535a84b4",
+            "id": "dea91e6c-04aa-4211-b369-fbf866275593",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "e9e98a71-c73b-48ea-85e7-cf86bafb5c2a",
-            "enumb": 0,
-            "eventtype": 4,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 8,
+            "eventtype": 2,
             "m_owner": "5e930408-0d6f-45c6-ba24-2662b11bd945"
         },
         {
-            "id": "faf5471e-ef62-4e8e-9efd-c0eddef80ce9",
+            "id": "a92be0d2-ba0b-4a85-b1d3-8484fc6096ff",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -116,6 +116,6 @@
         }
     ],
     "solid": false,
-    "spriteId": "a8bd1a56-891e-496c-9ee8-384df51e05b5",
+    "spriteId": "3a60baf0-23dc-4ad8-815e-22b324426e03",
     "visible": true
 }

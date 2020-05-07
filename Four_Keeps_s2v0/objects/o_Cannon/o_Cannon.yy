@@ -5,16 +5,6 @@
     "name": "o_Cannon",
     "eventList": [
         {
-            "id": "0d00ef46-40ca-4e2a-bcd3-002a8b6964c3",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "3626bab0-ee79-4a0d-8566-1ca810939f5a"
-        },
-        {
             "id": "18291c86-bd8f-4b14-ac98-b1e2b0182ba4",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -112,6 +102,6 @@
         }
     ],
     "solid": false,
-    "spriteId": "1dcd6b67-fc87-4c41-be57-4266fb9ecf1c",
+    "spriteId": "614b4e92-fdec-4aa3-8b3d-f543b063bbb6",
     "visible": true
 }

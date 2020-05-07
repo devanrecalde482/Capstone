@@ -2,7 +2,7 @@
     "id": "76058611-0ab8-4454-b04f-29dc7018c3a2",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_target_volcano",
+    "name": "s_Target_Volcano",
     "For3D": false,
     "HTile": false,
     "VTile": false,
