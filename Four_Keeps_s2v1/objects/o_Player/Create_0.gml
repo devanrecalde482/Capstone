@@ -3,7 +3,7 @@
 keybinds = [];
 cursor = noone;
 
-hp = 1;
+//hp = 1;
 
 list_capturables = [];
 list_cannons = [];

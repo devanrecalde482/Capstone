@@ -1,4 +1,4 @@
-/// @description time tracker
+/// @description Timer
 
 //this bit may not really be different from what is used
 //gameTime += (delta_time*0.0000001) * game_get_speed(gamespeed_fps);
@@ -11,15 +11,23 @@ if(timerOn){
 		clock.image_index = floor(phaseTime);
 	
 		if(global.phase == 0){
-			if( (player1.num_castles_enclosed > 0) && (player2.num_castles_enclosed > 0) ){
-				phaseTime = 0;
+			with(global.mainID){
+				if( (list_players[0].num_castles_enclosed > 0) && (list_players[1].num_castles_enclosed > 0) ){
+					other.phaseTime = 0;
+				}
 			}
 		}
 	
 		//TODO: check to see if there are any areas that a cannon can be placed
 		//else, can_place_cannon = false
 		else if(global.phase == 1){
-			if( (!player1.can_place_cannon) && (!player2.can_place_cannon) ){
+			var moreCannons = false;
+			with(o_Player){
+				if(saved_cannons > 0){
+					moreCannons = true;	
+				}
+			}
+			if( !moreCannons){
 				phaseTime = 0;
 			}
 		}

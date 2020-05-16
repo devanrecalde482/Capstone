@@ -17,8 +17,8 @@ if(can_move){
 				}
 			}
 			
-			x = player.list_capturables[capNum].x
-			y = player.list_capturables[capNum].y
+			x = player.list_capturables[capNum].x+32;
+			y = player.list_capturables[capNum].y+32;
 		}
 
 		//previous
@@ -34,8 +34,8 @@ if(can_move){
 				}
 			}
 			
-			x = player.list_capturables[capNum].x
-			y = player.list_capturables[capNum].y
+			x = player.list_capturables[capNum].x+32;
+			y = player.list_capturables[capNum].y+32;
 		}
 			
 		//choose starting castle
