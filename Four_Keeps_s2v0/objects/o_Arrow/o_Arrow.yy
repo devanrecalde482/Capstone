@@ -5,13 +5,23 @@
     "name": "o_Arrow",
     "eventList": [
         {
-            "id": "ca14ae98-5cb5-4a06-a2f1-fc4d5910db93",
+            "id": "a160697b-978b-4e0f-80ff-a795c3b28160",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "79c44a8e-5829-4e50-90ea-ae63bfcbd821",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "91498b71-c3b1-4a1e-a888-e5849ae92c14"
+        },
+        {
+            "id": "28bc72dc-4691-4d57-a31a-dd643216774c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 2,
+            "eventtype": 0,
             "m_owner": "91498b71-c3b1-4a1e-a888-e5849ae92c14"
         }
     ],
@@ -33,7 +43,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "799188e1-eda2-48fd-b0b8-fa74880040f1",
+            "id": "f9544b1e-bdd7-4ffe-bbe6-0a5576234fd2",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -42,8 +52,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
-            "varName": "size",
+            "value": "0",
+            "varName": "destroyed",
             "varType": 1
         }
     ],

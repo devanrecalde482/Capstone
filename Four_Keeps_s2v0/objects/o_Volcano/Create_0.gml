@@ -1,2 +1,3 @@
 ammo = o_Fireball;
-cooldown = 5;
+cooldown = 8;
+//sfxShoot = snd_Volcano

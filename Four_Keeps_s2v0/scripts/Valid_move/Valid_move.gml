@@ -12,4 +12,6 @@ if( (object.x < 0) || (object.x > room_width) || (object.y < 0) || (object.y > r
 }
 
 
+
 return valid;
+

@@ -3,7 +3,7 @@
 
 //TODO: add parameter to be used when players play a piece;
 //this is so that if player 1 sets a piece, the entire map doesn't need
-//to be checked?
+//to be checked
 
 
 var curSpot;

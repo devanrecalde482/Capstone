@@ -25,13 +25,13 @@
             "m_owner": "4643ac26-9e29-45fb-9832-e2d24e5fed49"
         },
         {
-            "id": "6708ac40-a2c4-4d79-b8a3-0b9f31a2f0f0",
+            "id": "2e2d775d-ef11-4e26-b69c-063d7dcfdef9",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 0,
+            "eventtype": 8,
             "m_owner": "4643ac26-9e29-45fb-9832-e2d24e5fed49"
         }
     ],
@@ -121,6 +121,20 @@
             "value": "False",
             "varName": "fired",
             "varType": 3
+        },
+        {
+            "id": "0c05627b-5123-41d9-a036-c926a9e92911",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "depth",
+            "varType": 0
         }
     ],
     "solid": false,

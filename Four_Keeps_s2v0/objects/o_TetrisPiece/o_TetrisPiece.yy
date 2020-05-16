@@ -93,20 +93,6 @@
             "value": "0",
             "varName": "can_move",
             "varType": 3
-        },
-        {
-            "id": "fcce9b17-0058-4a5a-8fd7-f8e8109b6ded",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "$FFFFFFFF",
-            "varName": "pColor",
-            "varType": 7
         }
     ],
     "solid": true,

@@ -1,7 +1,6 @@
 ///@description Movement
 
 
-
 if(can_move){
 	if(player != noone && player.can_move){
 		
@@ -65,6 +64,7 @@ if(can_move){
 		if(keyboard_check_pressed(player.keybinds[5])){
 			if(valid_spot){
 				can_move = false;
+				//audio_play_sound(snd_Wall, 1, false);
 				
 				var newCannon = instance_create_layer(x, y, "pieces", o_Cannon);
 				var temp = player.list_cannons;
@@ -97,6 +97,7 @@ if(can_move){
 
 
 }
+
 
 
 

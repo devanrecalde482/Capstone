@@ -18,6 +18,8 @@ with(curObject){
 				global.map_grid[floor(yy/32), floor(xx/32)] = ((10*player.num) + 2);
 				newPiece.player = player;
 				newPiece.image_alpha = 0.8;
+				newPiece.image_blend = -1;
+				newPiece.depth = 0;
 			}
 			else{
 				instance_destroy( newPiece );

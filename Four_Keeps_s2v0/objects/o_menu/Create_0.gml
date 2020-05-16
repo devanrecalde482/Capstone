@@ -40,7 +40,7 @@ titleCol = c_white;
 
 
 // Title of your game
-gameTitle = "Rampart";
+gameTitle = "Four Keeps";
 
 // Size of the title
 titleSize = 2;

@@ -49,15 +49,18 @@ with(o_Player){
 	
 	for(var i = 0; i < global.numOfCapturables; i++){
 		var curCap = list_capturables[i];
-		curCap.player = self;
+		//curCap.player = self;
+		
 		
 		with(curCap){
 			if((i == 0) || (i == 1)){
 				instance_change(o_Castle, true);
+				//curCap.image_index = curCap.player.num-1;
 			}
 			else{
 				if(list_cap_values[i-2] == 0){
 					instance_change(o_Castle, true);
+					//curCap.image_index = curCap.player.num-1;
 				}
 				else if(list_cap_values[i-2] == 1){
 					instance_change(o_Volcano, true);
@@ -70,13 +73,17 @@ with(o_Player){
 				}
 			
 			}
-		}	
-
-
+		}
+		
+		curCap.player = self;
+		curCap.image_index = curCap.player.num-1;
+		
+		
 	}
 
 	
 }
+
 
 
 

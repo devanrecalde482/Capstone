@@ -5,7 +5,7 @@
     "name": "o_Capturable",
     "eventList": [
         {
-            "id": "24aac003-1b2e-493b-8190-bde4ff6f812c",
+            "id": "fd922be4-0f63-4e35-b7fb-cc950a00a22d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,

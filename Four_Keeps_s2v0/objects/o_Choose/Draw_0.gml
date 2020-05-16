@@ -1,2 +1,2 @@
 
-draw_sprite_ext(sprite_index, image_index, x, y, 1, 1, 0, player.color, 0.8);
+draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, player.color, 0.8);

@@ -32,11 +32,9 @@ if(timerOn){
 		}
 		
 	}
-	else if(instance_number(o_Projectile) > 0){
+	else if( (instance_number(o_Ball) > 0) || (instance_number(o_Rock) > 0) || (instance_number(o_fireball) > 0) ){
 		//wait
-		timerOn = false;
-		clock.visible = false;
-		alarm[6] = 3 * global.gSpeed;
+
 	}
 	else{		
 		

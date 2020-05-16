@@ -1,2 +1,3 @@
 ammo = o_Arrow;
-cooldown = 10;
+cooldown = 5;
+//sfxShoot = snd_Ballista;

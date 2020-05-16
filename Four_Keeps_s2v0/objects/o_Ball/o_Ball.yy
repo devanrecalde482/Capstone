@@ -1,19 +1,10 @@
 {
-    "id": "e9e98a71-c73b-48ea-85e7-cf86bafb5c2a",
+    "id": "de57e392-8b8a-4f99-86b4-020281012795",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "o_Ball",
     "eventList": [
-        {
-            "id": "be41f039-1eba-4988-ba95-ef2d1c94ca32",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "e9e98a71-c73b-48ea-85e7-cf86bafb5c2a"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

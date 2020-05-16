@@ -56,8 +56,7 @@ if(player.can_move){
 			if(selection == temp){
 				cycling = false;
 			}
-			
-			if(selection < global.numOfCapturables){
+			else if(selection < global.numOfCapturables){
 				var cap = player.list_capturables[selection];
 				if(cap.enclosed == true){
 					if( (cap.object_index != o_Castle) && (cap.recharging == false)){
@@ -99,8 +98,7 @@ if(player.can_move){
 			if(selection == temp){
 				cycling = false;
 			}
-			
-			if(selection < global.numOfCapturables){
+			else if(selection < global.numOfCapturables){
 				var cap = player.list_capturables[selection];
 				if(cap.enclosed == true){
 					if( (cap.object_index != o_Castle) && (cap.recharging == false)){
@@ -143,15 +141,6 @@ if(player.can_move){
 				if( (curCannon.enclosed) && (!curCannon.recharging) ){
 					curTurret = curCannon;
 					fired = true;
-					
-					//ball = instance_create_layer(curCannon.x, curCannon.y, "pieces", o_Ball)
-					//ball.targetX = x;
-					//ball.targetY = y;
-					//ball.source = curCannon;
-					//ball.fired = true;
-
-					//curCannon.recharging = true;				
-					//fired = true;
 				}	
 				
 			}
@@ -168,13 +157,20 @@ if(player.can_move){
 		
 		//fire projectile
 		if(curTurret != noone){
+			//audio_play_sound(curTurret.sfxShoot, 1, false);
 			curTurret.recharging = true;
 			
+			var projectile = instance_create_layer(curTurret.x, curTurret.y, "pieces", curTurret.ammo);
+			projectile.targetX = x;
+			projectile.targetY = y;
+			projectile.source = curTurret;
+			projectile.fired = true;
+
 			if(curTurret.object_index == o_Trebuchet){
-				//TODO: fire multiple projectiles at random intervals
-				for(i = 0; i < 1; i++){
-					var projectile = instance_create_layer(curTurret.x, curTurret.y, "pieces", curTurret.ammo);
-					
+				//fire 2 more rocks
+				for(i = 0; i < 2; i++){
+					projectile = instance_create_layer(curTurret.x, curTurret.y, "pieces", curTurret.ammo);
+		
 					var xx, yy;
 					
 					xx = random_range(x-100,x+100);
@@ -184,7 +180,6 @@ if(player.can_move){
 					else if (xx >= room_width){
 						xx = (room_width - 1);
 					}
-					projectile.targetX = xx;
 					
 					yy = random_range(x-100,x+100);
 					if(yy < 0){
@@ -193,36 +188,23 @@ if(player.can_move){
 					else if (yy >= room_height){
 						yy = (room_height - 1);
 					}
+					
+					projectile.targetX = xx;
 					projectile.targetY = yy		
 	
 					projectile.source = curTurret;
 					projectile.fired = true;
-									
-					//TODO: make it shoot in intervals
-					/*
-					for(var timer = room_speed*0.5*irandom(5); timer < 0; timer--){			
-						//do nothing
-					}
-					*/
 
 				}
-			}//end trebuchet
-			else{
-				var projectile = instance_create_layer(curTurret.x, curTurret.y, "pieces", curTurret.ammo);
-				projectile.targetX = x;
-				projectile.targetY = y;
-				projectile.source = curTurret;
-				projectile.fired = true;
-
-				if(curTurret.object_index == o_Ballista){
-					projectile.image_angle = point_direction(curTurret.x,curTurret.y,x,y); 
-				}
-				
-			}
-				
+			}//end trebuchet		
+			
 			
 		}//done firing
+		
+		selection = global.numOfCapturables;
+		sprite_index = asset_get_index("s_Reticle");
 
 	}//done checking after fire button is pressed
+
 
 }

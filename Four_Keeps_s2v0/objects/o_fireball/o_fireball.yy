@@ -5,16 +5,6 @@
     "name": "o_Fireball",
     "eventList": [
         {
-            "id": "dea91e6c-04aa-4211-b369-fbf866275593",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 8,
-            "eventtype": 2,
-            "m_owner": "5e930408-0d6f-45c6-ba24-2662b11bd945"
-        },
-        {
             "id": "a92be0d2-ba0b-4a85-b1d3-8484fc6096ff",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -44,78 +34,9 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "40377ea0-7dc8-40cf-98a5-50ee6f20dc03",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "4",
-            "varName": "velocity",
-            "varType": 1
-        },
-        {
-            "id": "93f9a7ed-f145-455c-811a-73b996b33c42",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "targetX",
-            "varType": 1
-        },
-        {
-            "id": "51731442-3ebb-475d-b354-84f55032de7a",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "targetY",
-            "varType": 1
-        },
-        {
-            "id": "10f20a03-85a6-4718-9cc2-864b70f68816",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "source",
-            "varType": 5
-        },
-        {
-            "id": "eabda3dc-a7cc-491e-a1d2-eac0b7352ac6",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "fired",
-            "varType": 3
-        }
+        
     ],
     "solid": false,
-    "spriteId": "3a60baf0-23dc-4ad8-815e-22b324426e03",
+    "spriteId": "a4360177-e178-4a67-93cf-36b6323c6b84",
     "visible": true
 }

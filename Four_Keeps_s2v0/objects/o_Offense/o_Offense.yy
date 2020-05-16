@@ -73,6 +73,20 @@
             "value": "0",
             "varName": "cooldown",
             "varType": 1
+        },
+        {
+            "id": "b73627ef-21c3-4311-822f-6a50f6bb58d1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "sfxShoot",
+            "varType": 5
         }
     ],
     "solid": false,

@@ -1,4 +1,0 @@
-
-if(recharging){
-	recharging = false; 
-}

@@ -9,7 +9,7 @@ if(can_move){
 	}
 	
 	if(player != noone){
-		pColor = player.color;	
+		image_blend = player.color;	
 	}
 	
 	if( (player != noone) && (player.can_move) ){
@@ -42,19 +42,17 @@ if(can_move){
 			image_index++;
 		}
 
-		if( !Valid_move( self ) ){
+		if( !Valid_move( self ) || place_meeting(x, y, o_Barrier)){
 			x = xx;
 			y = yy;
 		}
 		
-		if(place_empty(x,y)){
+		if( place_empty(x,y)){
 			valid_spot = true;
-			
 			image_alpha = 1;
 		}
 		else{
 			valid_spot = false;
-			
 			image_alpha = 0.5;
 		}
 
@@ -62,6 +60,7 @@ if(can_move){
 		if(keyboard_check_pressed(player.keybinds[5])){
 			if(valid_spot){	
 				Add_Piece(self);
+				//audio_play_sound(snd_Wall, 1, false);
 
 				var range = ds_list_size(global.tPieces)-1;
 				if(global.curRound < 2){
