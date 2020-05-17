@@ -1,5 +1,7 @@
 ///@description Start game
 
+randomize();
+
 global.tile_size = 32;
 global.rounds = 10;
 global.curRound = 1;
@@ -8,7 +10,7 @@ global.numOfCapturables = 5;
 global.phase = 0;
 phaseTime = 0;
 //currently 10/10/15/20 seems to be best?
-timers = [10, 10, 15, 25, 0, 0, 0, 0]; 
+timers = [10, 10, 20, 20, 0, 0, 0, 0]; 
 //gameTime = 0; //total time game is running. so good for if 10m limit
 global.isPaused = false;
 

@@ -13,26 +13,36 @@ with(curPiece){
 				                      				
 	x -= (32*4);
 	y -= (32*4);
-					
-	Add_Piece(self);
-
+	
+	if(place_empty(x,y)){
+		Add_Piece(self);
+	}
+	
 	for(var i = 0; i < 7; i++){
 		x += 32;
-		Add_Piece(self);		
+		if(place_empty(x,y)){
+			Add_Piece(self);
+		}	
 	}
 			
 	for(var j = 0; j < 7; j++){
-		y += 32;
-		Add_Piece(self);
+		y += 32;	
+		if(place_empty(x,y)){
+			Add_Piece(self);
+		}
 	}
 	for(var i = 0; i < 7; i++){
 		x -= 32;
-		Add_Piece(self);		
+		if(place_empty(x,y)){
+			Add_Piece(self);
+		}	
 	}
 			
 	for(var j = 0; j < 6; j++){
 		y -= 32;
-		Add_Piece(self);
+		if(place_empty(x,y)){
+			Add_Piece(self);
+		}
 	}
 
 	instance_destroy(curPiece);
