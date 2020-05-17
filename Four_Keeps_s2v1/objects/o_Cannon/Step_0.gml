@@ -27,11 +27,6 @@ if(can_move){
 		if(keyboard_check_pressed(player.keybinds[3])){
 			x += global.tile_size;
 		}
-
-		//switch
-		if(keyboard_check_pressed(player.keybinds[4])){
-			//TODO: Change into alt cannon types
-		}
 	
 		if(!Valid_move(self)){
 			x = xx;
@@ -74,6 +69,8 @@ if(can_move){
 					
 				player.num_of_cannons++;
 				player.saved_cannons--;
+				
+				audio_play_sound(snd_Default1, 1, false);
 					
 				if(player.saved_cannons <= 0){
 					player.can_place_cannon = false;

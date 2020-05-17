@@ -3,7 +3,7 @@
 show_message("Place your cannons");
 
 with(o_Player){
-	cursor = instance_create_layer(x, y, "UI", o_Cannon);
+	cursor = instance_create_layer(x-32, y-32, "UI", o_Cannon);
 	can_move = true;
 	cursor.player = self;
 	cursor.can_move = true;

@@ -1,4 +1,5 @@
-
+list_players[0].layer = layer_get_id("UI");
+list_players[1].layer = layer_get_id("UI");
 
 list_players[0].list_capturables[0] = p1_capture1;
 list_players[0].list_capturables[1] = p1_capture2;

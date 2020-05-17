@@ -8,12 +8,13 @@ CheckEnclosed();
 
 with(o_Player){
 	
-	if(cursor != noone){
-		if(global.phase == 0){
-			Set_Start_Castle(self);
+	if(global.phase == 0){
+		if(cursor != noone){
+			
+			Set_Start_Castle(self);		
+			instance_destroy(cursor);
+			cursor = noone;
 		}
-		instance_destroy(cursor);
-		cursor = noone;
 	}
 	
 
@@ -26,10 +27,15 @@ with(o_Player){
 		
 	}
 	
+	instance_destroy(cursor);
 	can_move = false;
 
 	
+	
 }
+
+instance_destroy(o_Choose);
+instance_destroy(o_Reticle);
 
 if(global.phase == 2){
 	instance_destroy(o_Projectile);

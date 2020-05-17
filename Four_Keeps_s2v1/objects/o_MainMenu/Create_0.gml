@@ -2,7 +2,8 @@
 menu[0] = "Play";
 menu[1] = "Instructions";
 menu[2] = "Controls";
-menu[3] = "Exit";
+menu[3] = "About";
+menu[4] = "Exit";
 
 
 // cursorLevitate will be used to keep a variable that

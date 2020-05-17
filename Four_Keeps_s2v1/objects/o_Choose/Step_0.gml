@@ -17,8 +17,8 @@ if(can_move){
 				}
 			}
 			
-			x = player.list_capturables[capNum].x+32;
-			y = player.list_capturables[capNum].y+32;
+			x = player.list_capturables[capNum].x;
+			y = player.list_capturables[capNum].y;
 		}
 
 		//previous
@@ -34,14 +34,14 @@ if(can_move){
 				}
 			}
 			
-			x = player.list_capturables[capNum].x+32;
-			y = player.list_capturables[capNum].y+32;
+			x = player.list_capturables[capNum].x;
+			y = player.list_capturables[capNum].y;
 		}
-			
+		player.x = x;
+		player.y = y;
+		
 		//choose starting castle
 		if(keyboard_check_pressed(player.keybinds[5])){
-			player.x = x;
-			player.y = y;
 			Set_Start_Castle(player);
 			instance_destroy(self);
 		}

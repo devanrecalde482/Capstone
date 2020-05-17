@@ -1,11 +1,9 @@
 ///@function Set_start_Castle(player)
 ///@description setup the starting castle locatoin
 
-
 var myPlayer = argument0;
 
 myPlayer.can_move = false;
-myPlayer.cursor = noone;
 			
 var curPiece = instance_create_layer(myPlayer.x, myPlayer.y, "pieces", o_Single);
 curPiece.player = myPlayer;
@@ -39,6 +37,8 @@ with(curPiece){
 
 	instance_destroy(curPiece);
 }
+
+audio_play_sound(snd_Default1, 1, false);
 			
 FloodAll();
 CheckEnclosed();

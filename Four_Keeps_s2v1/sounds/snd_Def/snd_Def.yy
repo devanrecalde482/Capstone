@@ -1,8 +1,8 @@
 {
-    "id": "75a44c2a-473d-413e-a849-a16ac6698e10",
+    "id": "3ab61f04-276f-4bfe-bf0a-c28376d39152",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "snd_Ballista",
+    "name": "snd_Def",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,

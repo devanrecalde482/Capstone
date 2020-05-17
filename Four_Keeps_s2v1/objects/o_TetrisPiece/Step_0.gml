@@ -60,7 +60,7 @@ if(can_move){
 		if(keyboard_check_pressed(player.keybinds[5])){
 			if(valid_spot){	
 				Add_Piece(self);
-				//audio_play_sound(snd_Wall, 1, false);
+				audio_play_sound(snd_Default1, 1, false);
 
 				var range = ds_list_size(global.tPieces)-1;
 				if(global.curRound < 2){

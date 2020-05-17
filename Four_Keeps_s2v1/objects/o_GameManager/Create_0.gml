@@ -21,10 +21,11 @@ set_piece_list();
 global.map_width = room_width / global.tile_size;
 global.map_height = room_height / global.tile_size;
 
+
 InitializeMap();
-with(global.mainID){
-	setCapturables();
-}
+
+InitializePlayers();
+
 
 
 
@@ -32,6 +33,8 @@ clock = instance_create_layer(room_width/2, ( (room_height - o_Temp_Hud_Bottom.s
 clock.visible = false;
 
 FloodAll();
+
+audio_channel_num(5);
 
 alarm[0] = 1 * global.gSpeed;
 
